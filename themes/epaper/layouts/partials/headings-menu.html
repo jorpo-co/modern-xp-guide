@@ -1,0 +1,24 @@
+{{/* headings-menu.html — renders a page's h2 + h3 subheadings as a nested submenu.
+     Links use clean real paths: /<page>/<heading-id>. JS handles history state.
+     Context: a page. */}}
+{{ $path := .RelPermalink }}
+<ul class="sidebar-submenu">
+  {{ range .Fragments.Headings }}
+    {{ range .Headings }}
+      {{ if .Title }}
+        <li>
+          <a href="{{ $path }}{{ .ID }}" data-heading-id="{{ .ID }}" class="subsection">{{ .Title }}</a>
+          {{ if .Headings }}
+            <ul>
+              {{ range .Headings }}
+                {{ if .Title }}
+                  <li><a href="{{ $path }}{{ .ID }}" data-heading-id="{{ .ID }}" class="subsection">{{ .Title }}</a></li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          {{ end }}
+        </li>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>

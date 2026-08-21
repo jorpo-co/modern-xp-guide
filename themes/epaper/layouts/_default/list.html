@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  {{ if .Pages }}
+    <ul class="appendix-list">
+      {{ range .Pages.ByWeight }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

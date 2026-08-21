@@ -1,0 +1,18 @@
+{
+  "name": "modern-xp-guide",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,css -c blue,green \"pnpm run dev:server\" \"pnpm run dev:css\"",
+    "build": "pnpm run build:css && hugo --gc --minify",
+    "build:css": "NODE_ENV=production postcss assets/css/main.css --dir static",
+    "dev:server": "hugo server -D --disableFastRender",
+    "dev:css": "postcss assets/css/main.css --dir static --watch --map"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.4",
+    "nodemon": "^3.1.14",
+    "postcss": "^8.5.21",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1"
+  }
+}

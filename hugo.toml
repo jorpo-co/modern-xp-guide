@@ -1,0 +1,20 @@
+baseURL = "https://modernxp.jorpo.co/"
+languageCode = "en"
+title = "Modern XP: A Field Guide"
+theme = "epaper"
+disableKinds = ["rss", "taxonomy", "term"]
+enableGitInfo = false
+summaryLength = 0
+buildFuture = true
+
+[params]
+  description = "A field guide for Modern XP — agile practices for shipping small, learning fast, and containing complexity."
+  author = "Jorpo.co"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 4
+    startLevel = 2

@@ -1,0 +1,21 @@
+/* ===========================================
+   RESET
+   =========================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, fieldset, pre {
+  margin: 0;
+}
+
+:where(ul, ol)[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

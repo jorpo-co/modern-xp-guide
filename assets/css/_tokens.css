@@ -1,0 +1,116 @@
+/* ===========================================
+   TOKENS — epaper-ui design system
+   Warm paper tones · 4px grid · fluid type
+   =========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  /* 4px grid base */
+  --epaper-grid: 0.25rem;
+
+  /* Primitive grayscale — warm paper palette */
+  --epaper-color-000: hsl(43, 41%, 97%);
+  --epaper-color-100: hsl(43, 28%, 89%);
+  --epaper-color-200: hsl(42, 20%, 79%);
+  --epaper-color-300: hsl(35, 13%, 69%);
+  --epaper-color-400: hsl(30, 7%, 59%);
+  --epaper-color-500: hsl(22, 6%, 49%);
+  --epaper-color-600: hsl(20, 6%, 39%);
+  --epaper-color-700: hsl(20, 6%, 29%);
+  --epaper-color-800: hsl(20, 6%, 19%);
+  --epaper-color-900: hsl(20, 6%, 9%);
+
+  --epaper-color-red: hsl(354, 42%, 56%);
+  --epaper-color-orange: hsl(14, 51%, 63%);
+  --epaper-color-yellow: hsl(40, 71%, 73%);
+  --epaper-color-green: hsl(92, 28%, 65%);
+  --epaper-color-purple: hsl(311, 20%, 63%);
+  --epaper-color-blue-dark: hsl(213, 32%, 52%);
+  --epaper-color-blue-muted: hsl(210, 34%, 63%);
+  --epaper-color-blue-soft: hsl(193, 43%, 67%);
+  --epaper-color-blue-aqua: hsl(179, 25%, 65%);
+
+  /* Semantic tokens */
+  --epaper-fg: var(--epaper-color-900);
+  --epaper-fg-muted: var(--epaper-color-600);
+  --epaper-fg-subtle: var(--epaper-color-400);
+  --epaper-bg: var(--epaper-color-000);
+  --epaper-bg-muted: var(--epaper-color-100);
+  --epaper-border-color: var(--epaper-color-300);
+  --epaper-border-strong: var(--epaper-color-600);
+  --epaper-surface: var(--epaper-color-000);
+  --epaper-focus-color: var(--epaper-color-900);
+  --epaper-selection-bg: var(--epaper-color-300);
+  --epaper-mark-bg: var(--epaper-color-200);
+
+  /* Spacing scale — 4px increments */
+  --epaper-space-1: calc(var(--epaper-grid) * 1);
+  --epaper-space-2: calc(var(--epaper-grid) * 2);
+  --epaper-space-3: calc(var(--epaper-grid) * 3);
+  --epaper-space-4: calc(var(--epaper-grid) * 4);
+  --epaper-space-5: calc(var(--epaper-grid) * 6);
+  --epaper-space-6: calc(var(--epaper-grid) * 8);
+  --epaper-space-7: calc(var(--epaper-grid) * 12);
+  --epaper-space-8: calc(var(--epaper-grid) * 16);
+  --epaper-space-9: calc(var(--epaper-grid) * 20);
+
+  /* Typography */
+  --epaper-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --epaper-font-mono: "Fira Mono", ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Fluid type — segmented, rounded to 4px grid
+     Stable sizes, no clamp. Base: 16px.
+     Every value = calc(var(--epaper-grid) * N) for N grid units. */
+  --epaper-text-xs: calc(var(--epaper-grid) * 3);     /* 12px */
+  --epaper-text-sm: calc(var(--epaper-grid) * 3.5);   /* 14px */
+  --epaper-text-base: calc(var(--epaper-grid) * 4);   /* 16px */
+  --epaper-text-lg: calc(var(--epaper-grid) * 5);     /* 20px */
+  --epaper-text-xl: calc(var(--epaper-grid) * 6);     /* 24px */
+  --epaper-text-2xl: calc(var(--epaper-grid) * 7);    /* 28px */
+  --epaper-text-3xl: calc(var(--epaper-grid) * 8);    /* 32px */
+  --epaper-text-4xl: calc(var(--epaper-grid) * 10);   /* 40px */
+
+  /* Line heights — paired with text-* tokens
+     line = calc(1 + (grid * N) / font-size) where N = extra grid units above text */
+  --epaper-line-tight: calc(1 + (var(--epaper-grid) * 1) / var(--epaper-text-sm));    /* 14px + 4px  = 18px → 1.286 */
+  --epaper-line-xs: calc(1 + (var(--epaper-grid) * 2) / var(--epaper-text-xs));       /* 12px + 8px  = 20px → 1.667 */
+  --epaper-line-sm: calc(1 + (var(--epaper-grid) * 2) / var(--epaper-text-sm));     /* 14px + 8px  = 22px → 1.571 */
+  --epaper-line-base: calc(1 + (var(--epaper-grid) * 3) / var(--epaper-text-base));  /* 16px + 12px = 28px → 1.75 */
+  --epaper-line-lg: calc(1 + (var(--epaper-grid) * 3) / var(--epaper-text-lg));      /* 20px + 12px = 32px → 1.6 */
+  --epaper-line-xl: calc(1 + (var(--epaper-grid) * 3) / var(--epaper-text-xl));      /* 24px + 12px = 36px → 1.5 */
+  --epaper-line-2xl: calc(1 + (var(--epaper-grid) * 3) / var(--epaper-text-2xl));    /* 28px + 12px = 40px → 1.429 */
+  --epaper-line-3xl: calc(1 + (var(--epaper-grid) * 3) / var(--epaper-text-3xl));    /* 32px + 12px = 44px → 1.375 */
+  --epaper-line-4xl: calc(1 + (var(--epaper-grid) * 4) / var(--epaper-text-4xl));    /* 40px + 16px = 56px → 1.4 */
+
+  /* Generic leading tokens for body text */
+  --epaper-leading-tight: var(--epaper-line-tight);
+  --epaper-leading-snug: var(--epaper-line-sm);
+  --epaper-leading-normal: var(--epaper-line-base);
+  --epaper-leading-relaxed: var(--epaper-line-lg);
+
+  /* Weights */
+  --epaper-weight-normal: 400;
+  --epaper-weight-medium: 500;
+  --epaper-weight-bold: 700;
+
+  /* Borders */
+  --epaper-border-thin: calc(var(--epaper-grid) * 0.25);
+  --epaper-border-medium: calc(var(--epaper-grid) * 0.5);
+  --epaper-border-thick: var(--epaper-grid);
+  --epaper-radius-sm: calc(var(--epaper-grid) * 1);
+  --epaper-radius-md: calc(var(--epaper-grid) * 2);
+
+  /* Measure */
+  --epaper-measure: 65ch;
+  --epaper-measure-narrow: 45ch;
+  --epaper-measure-wide: 80ch;
+
+  /* Column presets */
+  --epaper-col-4:  calc(var(--epaper-grid) * 16);
+  --epaper-col-6:  calc(var(--epaper-grid) * 24);
+  --epaper-col-8:  calc(var(--epaper-grid) * 32);
+  --epaper-col-12: calc(var(--epaper-grid) * 48);
+  --epaper-col-16: calc(var(--epaper-grid) * 64);
+  --epaper-col-20: calc(var(--epaper-grid) * 80);
+}

@@ -1,0 +1,265 @@
+/* ===========================================
+   TYPOGRAPHY — Manifesto prose (original style)
+   All sizes on epaper-grid
+   =========================================== */
+
+body {
+  font-family: var(--epaper-font-sans);
+  font-size: var(--epaper-text-base);
+  line-height: var(--epaper-line-base);
+  color: var(--epaper-fg);
+  background: var(--epaper-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+  line-height: var(--epaper-line-tight);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--epaper-text-4xl);
+  letter-spacing: -0.02em;
+  margin-top: var(--epaper-space-8);
+  margin-bottom: var(--epaper-space-6);
+  padding-top: var(--epaper-space-6);
+}
+
+h2 {
+  font-size: var(--epaper-text-xl);
+  margin-top: var(--epaper-space-9);
+  margin-bottom: var(--epaper-space-4);
+  padding-top: var(--epaper-space-4);
+  border-top: var(--epaper-border-thin) solid var(--epaper-border-color);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--epaper-text-lg);
+  margin-top: var(--epaper-space-5);
+  margin-bottom: var(--epaper-space-2);
+}
+
+h4 {
+  font-size: var(--epaper-text-sm);
+  margin-top: var(--epaper-space-4);
+  margin-bottom: var(--epaper-space-1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Prose */
+
+p {
+  margin-bottom: var(--epaper-space-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p img {
+  max-width: var(--epaper-measure);
+}
+
+/* Links */
+
+a {
+  color: var(--epaper-fg);
+  text-decoration: underline;
+  text-underline-offset: calc(var(--epaper-grid) * 0.5);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--epaper-fg-muted);
+}
+
+strong {
+  font-weight: var(--epaper-weight-bold);
+}
+
+/* Lists */
+
+ul, ol, dl {
+  margin-bottom: var(--epaper-space-4);
+  padding-left: var(--epaper-space-5);
+}
+
+li {
+  margin-bottom: var(--epaper-space-1);
+}
+
+dt {
+  margin-top: var(--epaper-space-4);
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: var(--epaper-space-6);
+  font-size: var(--epaper-text-sm);
+}
+
+th {
+  text-align: left;
+  font-weight: var(--epaper-weight-bold);
+  padding: var(--epaper-space-2) var(--epaper-space-3);
+  border-bottom: var(--epaper-border-thin) solid var(--epaper-fg);
+}
+
+td {
+  padding: var(--epaper-space-2) var(--epaper-space-3);
+  border-bottom: var(--epaper-border-thin) solid var(--epaper-border-color);
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Blockquote — manifesto statements */
+
+blockquote {
+  margin: var(--epaper-space-5) 0;
+  padding: var(--epaper-space-4) var(--epaper-space-5);
+  border-left: var(--epaper-border-thick) solid var(--epaper-fg);
+  background: var(--epaper-bg-muted);
+  font-weight: 600;
+  font-size: var(--epaper-text-base);
+  line-height: var(--epaper-line-base);
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+/* Code */
+
+code {
+  font-family: var(--epaper-font-mono);
+  font-size: 0.85em;
+  background: var(--epaper-bg-muted);
+  padding: 0.15em 0.4em;
+  border-radius: 0;
+}
+
+pre {
+  font-family: var(--epaper-font-mono);
+  background: var(--epaper-bg-muted);
+  padding: var(--epaper-space-4) var(--epaper-space-5);
+  margin-bottom: var(--epaper-space-5);
+  overflow-x: auto;
+  border: var(--epaper-border-thin) solid var(--epaper-border-color);
+  font-size: var(--epaper-text-sm);
+  line-height: var(--epaper-line-sm);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Horizontal rule */
+
+hr {
+  border: none;
+  border-top: var(--epaper-border-thin) solid var(--epaper-border-color);
+  margin: var(--epaper-space-6) 0;
+}
+
+/* Appendix list */
+
+.appendix-list {
+  list-style: none;
+  padding: 0;
+}
+
+.appendix-list li {
+  padding: var(--epaper-space-2) 0;
+  border-bottom: var(--epaper-border-thin) solid var(--epaper-border-color);
+}
+
+.appendix-list a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.appendix-list a:hover {
+  text-decoration: underline;
+}
+
+/* Principles list */
+
+.principles {
+  list-style: none;
+  padding: 0;
+  margin: var(--epaper-space-5) 0;
+  counter-reset: principle;
+}
+
+.principles li {
+  counter-increment: principle;
+  padding: var(--epaper-space-4) 0;
+  border-bottom: var(--epaper-border-thin) solid var(--epaper-border-color);
+  font-weight: var(--epaper-weight-medium);
+}
+
+.principles li::before {
+  content: counter(principle) ".";
+  font-weight: 800;
+  font-size: var(--epaper-text-sm);
+  color: var(--epaper-fg-subtle);
+  margin-right: var(--epaper-space-2);
+}
+
+/* Selection & focus */
+
+::selection {
+  background: var(--epaper-selection-bg);
+  color: var(--epaper-fg);
+}
+
+:focus-visible {
+  outline: var(--epaper-border-medium) solid var(--epaper-focus-color);
+  outline-offset: calc(var(--epaper-grid) * 0.5);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 48rem) {
+  h1 { font-size: var(--epaper-text-2xl); }
+  h2 { font-size: var(--epaper-text-lg); }
+  h3 { font-size: var(--epaper-text-base); }
+
+  blockquote {
+    margin: var(--epaper-space-4) 0;
+    padding: var(--epaper-space-3) var(--epaper-space-4);
+    font-size: var(--epaper-text-base);
+  }
+
+  pre {
+    padding: var(--epaper-space-3);
+    font-size: var(--epaper-text-xs);
+  }
+}

@@ -1,0 +1,68 @@
+<aside class="sidebar">
+  <header class="sidebar-header">
+    <a href="/" class="sidebar-title" style="text-decoration: none;">
+      Modern XP
+      <small>A Field Guide</small>
+    </a>
+  </header>
+  <nav class="sidebar-nav-wrap" aria-label="Section navigation">
+    <ul class="sidebar-nav">
+      {{ $current := .Page.RelPermalink }}
+      {{ $currentPage := .Page }}
+
+      <li>
+        <a href="/" class="{{ if eq $current "/" }}active{{ end }}">
+          Overview
+        </a>
+        {{ if eq $current "/" }}
+          {{ partial "headings-menu.html" $currentPage }}
+        {{ end }}
+      </li>
+
+      {{ range site.Sections.ByWeight }}
+        {{ if not (eq .RelPermalink "/appendices/") }}
+        <li>
+          <a href="{{ .RelPermalink }}"
+             class="{{ if eq $current .RelPermalink }}active{{ end }}">
+            {{ .Title }}
+          </a>
+          {{ if and (eq $current .RelPermalink) (ne .RelPermalink "/ubiq/") }}
+            {{ partial "headings-menu.html" $currentPage }}
+          {{ end }}
+        </li>
+        {{ end }}
+      {{ end }}
+
+      <li><hr class="divider"></li>
+
+      {{ with site.GetPage "/appendices" }}
+        <li>
+          <a href="{{ .RelPermalink }}"
+             class="{{ if hasPrefix $current .RelPermalink }}active{{ end }}">
+            {{ .Title }}
+          </a>
+          {{ if eq $current .RelPermalink }}
+            {{ partial "headings-menu.html" $currentPage }}
+          {{ end }}
+        </li>
+        {{ range .Pages.ByWeight }}
+          <li>
+            <a href="{{ .RelPermalink }}"
+               class="subsection {{ if eq $current .RelPermalink }}active{{ end }}">
+              {{ .Title }}
+            </a>
+            {{ if eq $current .RelPermalink }}
+              {{ partial "headings-menu.html" $currentPage }}
+            {{ end }}
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+  <footer class="sidebar-footer">
+    <div class="sidebar-footer-links">
+      <a href="/privacy/" class="{{ if eq $current "/privacy/" }}active{{ end }}">Privacy</a><a href="mailto:modern-xp@jorpo.co">Email Us</a>
+    </div>
+    <span class="sidebar-copy">&copy; {{ now.Format "2006" }} Jorpo</span>
+  </footer>
+</aside>
