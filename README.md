@@ -24,3 +24,7 @@ The dev server runs at `localhost:1313` by default.
 ## What it is not
 
 This is not a theme you can reuse. The custom theme is specific to this content. If you want the practices themselves, look at the skills and prompts in the parent project.
+
+## License
+
+CC BY-SA 4.0. See [LICENSE](LICENSE) for details.
