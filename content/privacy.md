@@ -32,3 +32,16 @@ The information collected is limited to:
 Analytics data is processed and stored on Umami's infrastructure. Umami acts as a data processor on our behalf and does not use this data for any other purpose. You can review Umami's privacy policy at [umami.is/privacy](https://umami.is/privacy).
 
 This analytics setup is compliant with GDPR, CCPA, and PECR.
+
+## Comments
+
+Page comments are powered by [Giscus](https://giscus.app), which stores comments as [GitHub Discussions](https://docs.github.com/en/discussions) on the [modern-xp-website](https://github.com/jorpo-co/modern-xp-website) repository.
+
+Commenting requires a GitHub account and authenticating via the GitHub OAuth flow. The data stored includes:
+
+- Your GitHub username and avatar
+- The comment text you submit
+- The page URL where the comment was made
+- Timestamps and reaction data
+
+Giscus does not set cookies or track you across sites. All data is processed and stored on GitHub's infrastructure under their [Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement). We do not receive or store any of this data ourselves.

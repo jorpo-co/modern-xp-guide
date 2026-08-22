@@ -2,6 +2,12 @@
 
 A Hugo website that publishes the Modern XP field guide. Content covers direction, features, stories, spikes, use cases, issues, chores, decision records, and other XP practices.
 
+## Comments
+
+Page comments are handled by [Giscus](https://giscus.app), which uses [GitHub Discussions](https://docs.github.com/en/discussions) on the [modern-xp-website](https://github.com/jorpo-co/modern-xp-website) repo. The Giscus widget loads in an iframe; the custom theme (`assets/css/giscus-theme.css`) maps our epaper design tokens to Primer CSS variables so the widget matches the site styling.
+
+Comments can be disabled per-page by setting `comments: false` in the page's front matter (e.g. the privacy page).
+
 ## Build and run
 
 ```sh
