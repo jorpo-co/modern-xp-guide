@@ -1,0 +1,302 @@
+/* ===========================================
+   GISCUS THEME — epaper-ui design
+   Maps epaper design tokens to GitHub Primer CSS vars
+   that giscus uses inside its iframe.
+
+   Reference: https://github.com/giscus/giscus/blob/main/styles/themes/custom_example.css
+   =========================================== */
+
+@import "_tokens.css";
+
+main {
+  /* ---- Core canvas ---- */
+  --color-canvas-default: var(--epaper-bg);
+  --color-canvas-overlay: var(--epaper-bg);
+  --color-canvas-inset: var(--epaper-bg-muted);
+  --color-canvas-subtle: var(--epaper-bg-muted);
+  --color-page-header-bg: var(--epaper-bg);
+
+  /* ---- Text ---- */
+  --color-fg-default: var(--epaper-fg);
+  --color-fg-muted: var(--epaper-fg-muted);
+  --color-fg-subtle: var(--epaper-fg-subtle);
+  --color-fg-on-emphasis: var(--epaper-bg);
+
+  /* ---- Buttons ---- */
+  --color-btn-text: var(--epaper-fg);
+  --color-btn-bg: var(--epaper-bg-muted);
+  --color-btn-border: var(--epaper-border-color);
+  --color-btn-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  --color-btn-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  --color-btn-hover-bg: var(--epaper-color-200);
+  --color-btn-hover-border: var(--epaper-border-color);
+  --color-btn-active-bg: var(--epaper-color-200);
+  --color-btn-active-border: var(--epaper-border-strong);
+  --color-btn-selected-bg: var(--epaper-color-200);
+
+  --color-btn-primary-text: var(--epaper-bg);
+  --color-btn-primary-bg: var(--epaper-fg);
+  --color-btn-primary-border: var(--epaper-fg);
+  --color-btn-primary-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  --color-btn-primary-hover-bg: var(--epaper-color-800);
+  --color-btn-primary-hover-border: var(--epaper-color-800);
+  --color-btn-primary-selected-bg: var(--epaper-color-800);
+  --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+  --color-btn-primary-disabled-text: hsla(43, 41%, 97%, 0.6);
+  --color-btn-primary-disabled-bg: hsla(20, 6%, 9%, 0.4);
+  --color-btn-primary-disabled-border: hsla(20, 6%, 9%, 0.3);
+
+  --color-btn-outline-text: var(--epaper-fg);
+  --color-btn-outline-hover-text: var(--epaper-fg-muted);
+  --color-btn-outline-hover-bg: var(--epaper-bg-muted);
+
+  --color-btn-danger-text: var(--epaper-color-red);
+  --color-btn-danger-hover-bg: var(--epaper-color-red);
+  --color-btn-danger-hover-text: var(--epaper-bg);
+  --color-btn-danger-hover-border: var(--epaper-color-red);
+  --color-btn-counter-bg: var(--epaper-color-200);
+
+  /* ---- Inputs ---- */
+  --color-input-bg: var(--epaper-bg);
+  --color-input-contrast-bg: var(--epaper-bg-muted);
+  --color-input-border: var(--epaper-border-color);
+  --color-input-border-hover: var(--epaper-border-strong);
+  --color-input-focus-border: var(--epaper-focus-color);
+  --color-input-focus-ring: color-mix(in srgb, var(--epaper-focus-color) 15%, transparent);
+  --color-input-focus-shadow: color-mix(in srgb, var(--epaper-focus-color) 15%, transparent);
+
+  /* ---- Accent ---- */
+  --color-accent-fg: var(--epaper-fg);
+  --color-accent-emphasis: var(--epaper-fg);
+  --color-accent-muted: color-mix(in srgb, var(--epaper-fg) 15%, transparent);
+  --color-accent-subtle: color-mix(in srgb, var(--epaper-fg) 8%, transparent);
+
+  /* ---- Success (green) ---- */
+  --color-success-fg: hsl(92, 28%, 30%);
+  --color-success-emphasis: hsl(92, 28%, 50%);
+  --color-success-muted: color-mix(in srgb, var(--epaper-color-green) 30%, transparent);
+  --color-success-subtle: color-mix(in srgb, var(--epaper-color-green) 15%, transparent);
+
+  /* ---- Attention (yellow) ---- */
+  --color-attention-fg: hsl(40, 71%, 40%);
+  --color-attention-emphasis: hsl(40, 71%, 60%);
+  --color-attention-muted: color-mix(in srgb, var(--epaper-color-yellow) 30%, transparent);
+  --color-attention-subtle: color-mix(in srgb, var(--epaper-color-yellow) 15%, transparent);
+
+  /* ---- Danger (red) ---- */
+  --color-danger-fg: var(--epaper-color-red);
+  --color-danger-emphasis: var(--epaper-color-red);
+  --color-danger-muted: color-mix(in srgb, var(--epaper-color-red) 30%, transparent);
+  --color-danger-subtle: color-mix(in srgb, var(--epaper-color-red) 15%, transparent);
+
+  /* ---- Open / Closed / Done / Sponsors ---- */
+  --color-open-fg: var(--color-success-fg);
+  --color-open-emphasis: var(--color-success-emphasis);
+  --color-open-muted: var(--color-success-muted);
+  --color-open-subtle: var(--color-success-subtle);
+
+  --color-closed-fg: var(--epaper-color-red);
+  --color-closed-emphasis: var(--epaper-color-red);
+  --color-closed-muted: color-mix(in srgb, var(--epaper-color-red) 30%, transparent);
+  --color-closed-subtle: color-mix(in srgb, var(--epaper-color-red) 15%, transparent);
+
+  --color-done-fg: var(--epaper-color-purple);
+  --color-done-emphasis: hsl(311, 20%, 50%);
+  --color-done-muted: color-mix(in srgb, var(--epaper-color-purple) 30%, transparent);
+  --color-done-subtle: color-mix(in srgb, var(--epaper-color-purple) 15%, transparent);
+
+  --color-sponsors-fg: var(--epaper-color-purple);
+  --color-sponsors-emphasis: hsl(311, 20%, 50%);
+  --color-sponsors-muted: color-mix(in srgb, var(--epaper-color-purple) 30%, transparent);
+  --color-sponsors-subtle: color-mix(in srgb, var(--epaper-color-purple) 15%, transparent);
+
+  /* ---- Borders ---- */
+  --color-border-default: var(--epaper-border-strong);
+  --color-border-muted: var(--epaper-border-color);
+  --color-border-subtle: var(--epaper-bg-muted);
+  --color-border-accent-emphasis: var(--epaper-focus-color);
+
+  /* ---- Neutral ---- */
+  --color-neutral-fg: var(--epaper-color-500);
+  --color-neutral-emphasis: var(--epaper-fg-muted);
+  --color-neutral-muted: color-mix(in srgb, var(--epaper-color-200) 50%, transparent);
+  --color-neutral-subtle: color-mix(in srgb, var(--epaper-bg-muted) 50%, transparent);
+
+  /* ---- Segmented control (tabs: write/preview, sort) ---- */
+  --color-segmented-control-bg: var(--epaper-bg-muted);
+  --color-segmented-control-button-bg: var(--epaper-bg);
+  --color-segmented-control-button-selected-border: var(--epaper-border-strong);
+
+  /* ---- Action list ---- */
+  --color-action-list-item-inline-divider: color-mix(in srgb, var(--epaper-color-200) 48%, transparent);
+  --color-action-list-item-default-hover-bg: color-mix(in srgb, var(--epaper-bg-muted) 50%, transparent);
+  --color-action-list-item-default-hover-border: transparent;
+  --color-action-list-item-default-active-bg: color-mix(in srgb, var(--epaper-color-200) 50%, transparent);
+  --color-action-list-item-default-selected-bg: color-mix(in srgb, var(--epaper-color-200) 30%, transparent);
+
+  /* ---- Shadows ---- */
+  --color-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --color-shadow-medium: 0 3px 6px rgba(0, 0, 0, 0.08);
+  --color-shadow-large: 0 8px 24px rgba(0, 0, 0, 0.10);
+  --color-shadow-extra-large: 0 12px 48px rgba(0, 0, 0, 0.12);
+  --color-primer-shadow-inset: inset 0 1px 0 color-mix(in srgb, var(--epaper-border-color) 20%, transparent);
+
+  /* ---- Header ---- */
+  --color-header-bg: var(--epaper-bg-muted);
+  --color-header-text: var(--epaper-fg);
+  --color-header-logo: var(--epaper-fg);
+
+  /* ---- Avatars ---- */
+  --color-avatar-bg: var(--epaper-bg-muted);
+  --color-avatar-border: var(--epaper-color-200);
+  --color-avatar-stack-fade: var(--epaper-color-200);
+  --color-avatar-stack-fade-more: var(--epaper-border-color);
+
+  /* ---- Timeline ---- */
+  --color-timeline-badge-bg: var(--epaper-bg-muted);
+  --color-timeline-badge-border: var(--epaper-color-200);
+  --color-timeline-target-bg: color-mix(in srgb, var(--epaper-bg-muted) 50%, transparent);
+  --color-timeline-target-border: var(--epaper-focus-color);
+
+  /* ---- Underline nav (tab bar) ---- */
+  --color-underlinenav-border: transparent;
+  --color-underlinenav-border-hover: var(--epaper-border-color);
+  --color-underlinenav-border-active: var(--epaper-focus-color);
+  --color-underlinenav-text: var(--epaper-fg-muted);
+  --color-underlinenav-text-hover: var(--epaper-fg);
+  --color-underlinenav-text-active: var(--epaper-fg);
+  --color-underlinenav-icon: var(--epaper-fg-subtle);
+  --color-underlinenav-icon-hover: var(--epaper-fg-muted);
+  --color-underlinenav-icon-active: var(--epaper-fg);
+  --color-underlinenav-counter-text: var(--epaper-fg);
+  --color-underlinenav-counter-bg: color-mix(in srgb, var(--epaper-color-200) 50%, transparent);
+
+  /* ---- Switch tracking block ---- */
+  --color-switch-track-bg: var(--epaper-color-200);
+  --color-switch-track-hover-bg: var(--epaper-border-color);
+  --color-switch-track-active-bg: var(--epaper-fg-subtle);
+  --color-switch-track-checked-bg: var(--epaper-fg);
+  --color-switch-track-checked-hover-bg: var(--epaper-color-800);
+  --color-switch-track-checked-active-bg: var(--epaper-color-700);
+  --color-switch-knob-bg: var(--epaper-bg);
+  --color-switch-knob-checked-bg: var(--epaper-bg);
+  --color-switch-knob-border: var(--epaper-border-color);
+  --color-switch-knob-checked-border: var(--epaper-fg);
+
+  /* ---- Social reactions ---- */
+  --color-scale-gray-1: var(--epaper-bg-muted);
+  --color-scale-blue-1: hsl(193, 43%, 80%);
+  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+
+  /* ---- Prettylights (syntax highlighting) ---- */
+  --color-prettylights-syntax-comment: var(--epaper-fg-subtle);
+  --color-prettylights-syntax-constant: var(--epaper-fg);
+  --color-prettylights-syntax-entity: var(--epaper-color-blue-dark);
+  --color-prettylights-syntax-storage-modifier-import: var(--epaper-color-500);
+  --color-prettylights-syntax-entity-tag: hsl(92, 28%, 30%);
+  --color-prettylights-syntax-keyword: var(--epaper-color-red);
+  --color-prettylights-syntax-string: hsl(92, 28%, 30%);
+  --color-prettylights-syntax-variable: var(--epaper-color-orange);
+  --color-prettylights-syntax-brackethighlighter-unmatched: var(--epaper-color-red);
+  --color-prettylights-syntax-invalid-illegal-text: var(--epaper-bg);
+  --color-prettylights-syntax-invalid-illegal-bg: var(--epaper-color-red);
+  --color-prettylights-syntax-carriage-return-text: var(--epaper-bg);
+  --color-prettylights-syntax-carriage-return-bg: var(--epaper-color-red);
+  --color-prettylights-syntax-string-regexp: hsl(92, 28%, 30%);
+  --color-prettylights-syntax-markup-list: hsl(40, 71%, 40%);
+  --color-prettylights-syntax-markup-heading: var(--epaper-color-blue-dark);
+  --color-prettylights-syntax-markup-italic: var(--epaper-fg);
+  --color-prettylights-syntax-markup-bold: var(--epaper-fg);
+  --color-prettylights-syntax-markup-deleted-text: var(--epaper-color-red);
+  --color-prettylights-syntax-markup-deleted-bg: color-mix(in srgb, var(--epaper-color-red) 15%, transparent);
+  --color-prettylights-syntax-markup-inserted-text: hsl(92, 28%, 30%);
+  --color-prettylights-syntax-markup-inserted-bg: color-mix(in srgb, var(--epaper-color-green) 15%, transparent);
+  --color-prettylights-syntax-markup-changed-text: hsl(40, 71%, 40%);
+  --color-prettylights-syntax-markup-changed-bg: color-mix(in srgb, var(--epaper-color-yellow) 15%, transparent);
+  --color-prettylights-syntax-markup-ignored-text: var(--epaper-bg-muted);
+  --color-prettylights-syntax-markup-ignored-bg: var(--epaper-color-500);
+  --color-prettylights-syntax-meta-diff-range: var(--epaper-color-blue-dark);
+  --color-prettylights-syntax-brackethighlighter-angle: var(--epaper-fg-subtle);
+  --color-prettylights-syntax-sublimelinter-gutter-mark: var(--epaper-fg-subtle);
+  --color-prettylights-syntax-constant-other-reference-link: var(--epaper-color-blue-dark);
+  --color-prettylights-syntax-constant-other-reference-link-text: var(--epaper-color-blue-dark);
+
+  --color-btn-primary-disabled-text: color-mix(in srgb, var(--epaper-bg) 60%, transparent);
+  --color-btn-primary-disabled-bg: color-mix(in srgb, var(--epaper-fg) 40%, transparent);
+  --color-btn-primary-disabled-border: color-mix(in srgb, var(--epaper-fg) 30%, transparent);
+  --color-btn-primary-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
+}
+
+/* ---- Font overrides ---- */
+body, .gsc-reactions-popover, .gsc-comment-author, .gsc-comment-box-tabs,
+.gsc-comment-box-textarea-extras, .gsc-comment-box-buttons, .gsc-comment,
+.gsc-comment .gsc-comment-header, .gsc-tab, .gsc-tabs, .gsc-social-reaction-menu,
+input, textarea, select, button {
+  font-family: var(--epaper-font-sans);
+}
+
+.markdown-body, .gsc-comment-content, .gsc-comment-box-textarea,
+.comment-body, .comment-body p, .comment-body li, .comment-body blockquote {
+  font-family: var(--epaper-font-sans);
+}
+
+code, pre, .highlight, .gsc-comment-content pre, .gsc-comment-content code {
+  font-family: var(--epaper-font-mono) !important;
+}
+
+/* ---- Size tweaks ---- */
+.gsc-comment-box-tabs, .gsc-tabs {
+  font-size: 14px;
+}
+
+.gsc-comment-box-textarea-extras {
+  font-size: 12px;
+}
+
+.gsc-reactions-popover {
+  font-size: 14px;
+}
+
+.gsc-comment-box-textarea {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* ---- Remove border radius to match epaper ---- */
+.gsc-comment-box, .gsc-comment, .gsc-reactions-popover {
+  border-radius: 0;
+}
+
+input, textarea, select, button {
+  border-radius: 0;
+}
+
+/* ---- Timeline line colour ---- */
+.gsc-comment:not(.gsc-comment-separator) {
+  border-left-color: var(--color-border-muted);
+}
+
+/* ---- Reaction button ---- */
+.gsc-social-reaction-summary-item {
+  border-radius: 0 !important;
+}
+
+/* ---- Primary button (Submit) ---- */
+.gsc-comment-box-buttons .gsc-comment-box-primary {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* ---- Footer ---- */
+.gsc-footer {
+  font-size: 12px;
+  color: var(--color-fg-subtle);
+}

@@ -166,9 +166,8 @@ html, body {
   margin-bottom: var(--epaper-space-8);
 }
 
-/* Mobile */
-
 /* Skip to content — keyboard accessibility */
+
 .skip-link {
   position: absolute;
   top: -100%;
@@ -188,6 +187,31 @@ html, body {
   outline: var(--epaper-border-medium) solid var(--epaper-focus-color);
   outline-offset: var(--epaper-border-thin);
 }
+
+/* Comments section — giscus widget wrapper */
+
+.comments {
+  margin-top: var(--epaper-space-9);
+  padding-top: var(--epaper-space-6);
+  border-top: var(--epaper-border-thin) solid var(--epaper-border-color);
+}
+
+.comments h2 {
+  font-size: var(--epaper-text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+  margin-bottom: var(--epaper-space-5);
+  padding-top: 0;
+  border-top: none;
+}
+
+.comments-noscript {
+  font-size: var(--epaper-text-sm);
+  color: var(--epaper-fg-muted);
+}
+
+/* Mobile */
 
 @media (max-width: 48rem) {
   html, body {
