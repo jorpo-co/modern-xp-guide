@@ -10,6 +10,7 @@ buildFuture = true
 [params]
   description = "A field guide for Modern XP — agile practices for shipping small, learning fast, and containing complexity."
   author = "Jorpo.co"
+  umami_id = "e2568b03-c064-4b7f-87b7-e0ec625ce81e"
 
 [markup]
   [markup.goldmark]

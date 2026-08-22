@@ -43,6 +43,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.umami_id }}"></script>
   <script>window.pagePath = '{{ .Page.RelPermalink }}';</script>
 
   {{- $headingJs := resources.Get "js/heading-scroll.js" | js.Build (dict "minify" true) }}
