@@ -1,7 +1,10 @@
 ---
 title: "G: Task Structure Reference"
 weight: 7
-description: "Task structure template: Title, Parent, Inputs, Outputs, Constraints, Acceptance Criteria, and Definition of Done."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Task structure template: Title, Parent, Inputs, Outputs, Constraints, Acceptance Criteria, and Definition of Done."
 ---
 
 # Appendix G: Task Structure Reference

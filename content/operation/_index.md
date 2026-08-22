@@ -1,7 +1,10 @@
 ---
 title: "Operation"
 weight: 50
-description: "Continuous monitoring, incident response, production feedback loops, and friction budget to keep process costs in check."
+sitemap:
+  priority: 0.9
+meta:
+  description: "Continuous monitoring, incident response, production feedback loops, and friction budget to keep process costs in check."
 ---
 
 # Operation and Maintenance

@@ -1,7 +1,10 @@
 ---
 title: "D: Feedback Loops"
 weight: 4
-description: "How production data flows back through Issues, Direction, Work Items, and Delivery to close the feedback loop."
+sitemap:
+  priority: 0.7
+meta:
+  description: "How production data flows back through Issues, Direction, Work Items, and Delivery to close the feedback loop."
 ---
 
 # Appendix D: Feedback Loops

@@ -1,7 +1,10 @@
 ---
 title: "A: Event Storming"
 weight: 1
-description: "Big Picture and Process/Design Event Storming, two levels of domain exploration for shared understanding."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Big Picture and Process/Design Event Storming, two levels of domain exploration for shared understanding."
 ---
 
 # Appendix A: Event Storming, Two Levels

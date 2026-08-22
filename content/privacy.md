@@ -1,7 +1,11 @@
 ---
 title: "Privacy"
 weight: 100
-description: "Privacy-focused analytics via Umami. No cookies, no PII. GDPR, CCPA, and PECR compliant. Data removal on request."
+robots: noindex
+sitemap:
+  disable: true
+meta:
+  description: "Privacy-focused analytics via Umami. No cookies, no PII. GDPR, CCPA, and PECR compliant. Data removal on request."
 comments: false
 ---
 

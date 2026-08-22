@@ -1,7 +1,10 @@
 ---
 title: "F: When to Leave This Process"
 weight: 6
-description: "Conditions for skipping or modifying the process: pre-product-market fit, crisis, small teams, AI prototyping, and more."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Conditions for skipping or modifying the process: pre-product-market fit, crisis, small teams, AI prototyping, and more."
 ---
 
 # Appendix F: When to Leave This Process

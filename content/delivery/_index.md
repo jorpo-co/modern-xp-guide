@@ -1,7 +1,10 @@
 ---
 title: "Delivery"
 weight: 40
-description: "One continuous delivery loop: build, review, retro. Feature flags, DORA metrics, quality gates, and lightweight releases."
+sitemap:
+  priority: 0.9
+meta:
+  description: "One continuous delivery loop: build, review, retro. Feature flags, DORA metrics, quality gates, and lightweight releases."
 ---
 
 # Delivery

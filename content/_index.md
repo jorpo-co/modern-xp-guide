@@ -2,7 +2,10 @@
 title: "Overview"
 weight: 0
 layout: single
-description: "A compass for agile teams: 8 core principles for shipping small, learning fast, and containing complexity. Built on the Agile Manifesto."
+sitemap:
+  priority: 1.0
+meta:
+  description: "A compass for agile teams: 8 core principles for shipping small, learning fast, and containing complexity. Built on the Agile Manifesto."
 ---
 
 # Modern XP: A Field Guide

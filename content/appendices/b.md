@@ -1,7 +1,10 @@
 ---
 title: "B: Roadmap & Prioritization"
 weight: 2
-description: "Lightweight roadmap with Now/Next buckets, impact ranking, and why numeric scores and Future buckets are rejected."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Lightweight roadmap with Now/Next buckets, impact ranking, and why numeric scores and Future buckets are rejected."
 ---
 
 # Appendix B: Roadmap and Prioritization

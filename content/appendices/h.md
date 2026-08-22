@@ -1,7 +1,10 @@
 ---
 title: "H: Test Structure Reference"
 weight: 8
-description: "Test structure template: ID, Source, Scenario, Type, Preconditions, and Expected Result for behavior verification."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Test structure template: ID, Source, Scenario, Type, Preconditions, and Expected Result for behavior verification."
 ---
 
 # Appendix H: Test Structure Reference

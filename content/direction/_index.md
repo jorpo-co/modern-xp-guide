@@ -1,7 +1,10 @@
 ---
 title: "Direction"
 weight: 10
-description: "Set vision, define missions, craft goals, and explore your domain with Event Storming, Context Mapping, and Aggregate Design."
+sitemap:
+  priority: 0.9
+meta:
+  description: "Set vision, define missions, craft goals, and explore your domain with Event Storming, Context Mapping, and Aggregate Design."
 ---
 
 # Direction

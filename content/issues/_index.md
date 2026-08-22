@@ -1,7 +1,10 @@
 ---
 title: "Issues"
 weight: 20
-description: "Capture, triage, and resolve Problems, Ideas, Questions, and Incidents. Everything starts with an Issue."
+sitemap:
+  priority: 0.9
+meta:
+  description: "Capture, triage, and resolve Problems, Ideas, Questions, and Incidents. Everything starts with an Issue."
 ---
 
 # Issues

@@ -1,7 +1,10 @@
 ---
 title: "C: Use Cases & Aggregate Boundaries"
 weight: 3
-description: "Full Use Case structure template per Cockburn/Jacobson with Aggregate Boundary Rule and condensed example."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Full Use Case structure template per Cockburn/Jacobson with Aggregate Boundary Rule and condensed example."
 ---
 
 # Appendix C: Use Cases and Aggregate Boundaries

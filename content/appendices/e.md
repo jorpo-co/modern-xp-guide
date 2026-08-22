@@ -1,7 +1,10 @@
 ---
 title: "E: Cycle Summary"
 weight: 5
-description: "Quick reference for every scope unit in Modern XP: Task, Test, Use Case, Story, Delivery Cycle, and Direction."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Quick reference for every scope unit in Modern XP: Task, Test, Use Case, Story, Delivery Cycle, and Direction."
 ---
 
 # Appendix E: Cycle Summary (Reference, Not Rules)

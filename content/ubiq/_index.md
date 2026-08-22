@@ -1,7 +1,10 @@
 ---
 title: "Ubiquitous Language"
 weight: 70
-description: "Complete glossary of Modern XP terms, from Acceptance Criteria to Work Items."
+sitemap:
+  priority: 0.9
+meta:
+  description: "Complete glossary of Modern XP terms, from Acceptance Criteria to Work Items."
 ---
 
 # Ubiquitous Language

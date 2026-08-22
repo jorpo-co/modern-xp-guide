@@ -1,7 +1,10 @@
 ---
 title: "Work Items"
 weight: 30
-description: "Features, Stories, Use Cases, Spikes, Chores, Tasks, and Tests: how the team resolves Issues and delivers value."
+sitemap:
+  priority: 0.9
+meta:
+  description: "Features, Stories, Use Cases, Spikes, Chores, Tasks, and Tests: how the team resolves Issues and delivers value."
 ---
 
 # Work Items

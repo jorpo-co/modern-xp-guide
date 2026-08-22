@@ -1,7 +1,10 @@
 ---
 title: "I: Operation Reference"
 weight: 9
-description: "Reference material for incident severity, runbook template, SLO patterns, on-call rotation, and production readiness."
+sitemap:
+  priority: 0.7
+meta:
+  description: "Reference material for incident severity, runbook template, SLO patterns, on-call rotation, and production readiness."
 ---
 
 # Appendix I: Operation Reference
