@@ -1,0 +1,31 @@
+services:
+  traefik:
+    image: traefik:v3
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./config/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./config/tls.yml:/etc/traefik/tls.yml:ro
+      - ./config/certs:/etc/traefik/certs:ro
+
+  hugo:
+    build:
+      context: .
+      target: dev
+    volumes:
+      - .:/src
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hugo.rule=Host(`modern-xp.jorpo.loco`)"
+      - "traefik.http.routers.hugo.entrypoints=web"
+      - "traefik.http.routers.hugo.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
+      - "traefik.http.routers.hugo-secure.rule=Host(`modern-xp.jorpo.loco`)"
+      - "traefik.http.routers.hugo-secure.entrypoints=websecure"
+      - "traefik.http.routers.hugo-secure.tls=true"
+      - "traefik.http.routers.hugo-secure.service=hugo"
+      - "traefik.http.services.hugo.loadbalancer.server.port=1313"

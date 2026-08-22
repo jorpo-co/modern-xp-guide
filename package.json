@@ -6,7 +6,7 @@
     "build": "pnpm run build:css && hugo --gc --minify",
     "build:css": "NODE_ENV=production postcss assets/css/main.css --dir static && postcss assets/css/giscus-theme.css --dir static",
     "dev:server": "hugo server -D --disableFastRender",
-    "dev:css": "postcss assets/css/main.css --dir static --watch --map & postcss assets/css/giscus-theme.css --dir static --watch --map"
+    "dev:css": "concurrently -n main,giscus -c cyan,green \"postcss assets/css/main.css --dir static --watch --map\" \"postcss assets/css/giscus-theme.css --dir static --watch --map\""
   },
   "devDependencies": {
     "concurrently": "^10.0.4",

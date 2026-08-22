@@ -1,0 +1,28 @@
+{{/* comments.html — Giscus discussion widget
+     Set page.params.comments = false in front matter to disable on a page */}}
+{{ if .Params.comments | default true }}
+<section class="comments">
+  <h2 id="comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+          data-repo="jorpo-co/modern-xp-website"
+          data-repo-id="R_kgDOUAIO7g"
+          data-category="Comments"
+          data-category-id="DIC_kwDOUAIO7s4DD8jn"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="{{ "giscus-theme.css" | absURL }}"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          data-cfasync="false"
+          async>
+  </script>
+  <noscript>
+    <p class="comments-noscript">Comments require JavaScript to load. Enable JavaScript or discuss via
+      <a href="https://github.com/jorpo-co/modern-xp-website/discussions">GitHub Discussions</a>.</p>
+  </noscript>
+</section>
+{{ end }}

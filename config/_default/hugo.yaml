@@ -1,0 +1,28 @@
+languageCode: en
+title: "Modern XP: A Field Guide"
+theme: epaper
+
+enableRobotsTxt: true
+
+enableGitInfo: false
+summaryLength: 0
+buildFuture: true
+
+disableKinds:
+  - taxonomy
+  - term
+  - rss
+
+params:
+  description: "A field guide for Modern XP — agile practices for shipping small, learning fast, and containing complexity."
+  author: "Jorpo.co"
+  umami_id: e2568b03-c064-4b7f-87b7-e0ec625ce81e
+  email: modern-xp@jorpo.co
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    startLevel: 2

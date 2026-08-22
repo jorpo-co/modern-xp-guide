@@ -19,13 +19,37 @@ pnpm build        # production build with minification
 
 The dev server runs at `localhost:1313` by default.
 
+### Docker dev (HTTPS via Traefik)
+
+```sh
+make certs        # generate mkcert certs for modernxp.loco
+docker compose up
+```
+
+Then visit `https://modernxp.loco`. CSS rebuilds live via mounted volume.
+
 ## Structure
 
 - `content/` - Markdown pages for each practice area.
-- `assets/` - CSS source (processed by PostCSS).
+- `assets/css/` - CSS source (processed by PostCSS).
 - `static/` - Images, compiled CSS, favicons, robots.txt.
+- `layouts/` - Project-level templates overriding the theme.
 - `themes/epaper/` - Custom Hugo theme with layouts and partials.
-- `hugo.toml` - Site configuration.
+- `config/` - Hugo configuration split by environment:
+  - `config/_default/hugo.yaml` - Base config
+  - `config/development/hugo.yaml` - Dev overrides (baseURL, etc.)
+  - `config/production/hugo.yaml` - Prod overrides
+
+### Content front matter conventions
+
+| Field | Purpose |
+|-------|---------|
+| `meta.title` | Overrides `<title>` tag (optional) |
+| `meta.description` | Page-specific meta description |
+| `sitemap.priority` | Search priority (0.0–1.0) |
+| `sitemap.disable` | Exclude from sitemap |
+| `robots` | `noindex` to hide from search engines |
+| `comments` | `false` to disable giscus on page |
 
 ## What it is not
 

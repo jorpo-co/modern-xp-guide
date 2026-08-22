@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="wrapper">
+    {{ partial "sidebar.html" . }}
+    <main class="main" id="main-content">
+      <article class="content">
+        {{ block "main" . }}{{ end }}
+      </article>
+    </main>
+  </div>
+</body>
+</html>
