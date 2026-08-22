@@ -2,7 +2,7 @@
 /resources/
 .hugo_build.lock
 node_modules/
-/static/main.css
+/static/*.css
 .DS_Store
 Thumbs.db
 config/certs/
