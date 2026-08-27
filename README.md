@@ -19,14 +19,16 @@ pnpm build        # production build with minification
 
 The dev server runs at `localhost:1313` by default.
 
-### Docker dev (HTTPS via Traefik)
+### Docker dev (loco infra)
+
+This project is registered with the [loco](https://infra.loco) local development infrastructure.
+Traefik routing and TLS certificates are managed by the infra stack.
 
 ```sh
-make certs        # generate mkcert certs for modernxp.loco
-docker compose up
+docker compose up -d
 ```
 
-Then visit `https://modernxp.loco`. CSS rebuilds live via mounted volume.
+Then visit **https://modern-xp.jorpo.loco**. CSS rebuilds live via mounted volume.
 
 ## Structure
 
