@@ -17,13 +17,7 @@
   {{ $opts := dict
     "inlineImports" true
   }}
-  {{ with . | css.PostCSS $opts }}
-    {{ if hugo.IsDevelopment }}
-      <!--<link rel="stylesheet" href="{{ .RelPermalink }}">-->
-    {{ else }}
-      {{ with . | minify | fingerprint }}
-        <!--<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">-->
-      {{ end }}
-    {{ end }}
-  {{ end }}
+  {{ $css := . | css.PostCSS $opts }}
+  {{ $css = resources.Copy "css/giscus.css" $css }}
+  <!-- giscus theme at {{ $css.RelPermalink }} (loaded by giscus.js via data-theme, not by this page) -->
 {{ end }}
