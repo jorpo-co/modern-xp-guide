@@ -8,15 +8,6 @@
       {{ if .Title }}
         <li>
           <a href="{{ $path }}{{ .ID }}" data-heading-id="{{ .ID }}" class="subsection">{{ .Title }}</a>
-          {{ if .Headings }}
-            <ul>
-              {{ range .Headings }}
-                {{ if .Title }}
-                  <li><a href="{{ $path }}{{ .ID }}" data-heading-id="{{ .ID }}" class="subsection">{{ .Title }}</a></li>
-                {{ end }}
-              {{ end }}
-            </ul>
-          {{ end }}
         </li>
       {{ end }}
     {{ end }}
