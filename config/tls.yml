@@ -1,4 +1,0 @@
-tls:
-  certificates:
-    - certFile: /etc/traefik/certs/modernxp.loco.crt
-      keyFile: /etc/traefik/certs/modernxp.loco.key
