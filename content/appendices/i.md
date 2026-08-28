@@ -11,7 +11,7 @@ meta:
 
 ## Severity Definitions with Response Time Targets
 
-| Level | Meaning | First Response | Fix Target |
+| Level | Meaning | [First Response](/ubiq/#first-response) | [Fix Target](/ubiq/#fix-target) |
 |-------|---------|---------------|------------|
 | SEV1 | User-facing outage | 15 minutes | 4 hours |
 | SEV2 | Degraded experience for a subset of users | 30 minutes | 8 hours |
@@ -37,7 +37,7 @@ Steps:
 Escalation: [Who to contact if the steps do not resolve the incident]
 ```
 
-Write a runbook for every incident type that repeats twice.
+Write a [runbook](/ubiq/#runbook) for every incident type that repeats twice.
 
 ## SLO Design Patterns
 
@@ -48,16 +48,16 @@ Write a runbook for every incident type that repeats twice.
 | p99 latency | 1s | 5 minutes averaged over 30 days |
 | Error rate | <1% of requests | 10 minutes averaged over 30 days |
 
-Do not use the same SLO for every service. A batch job has different targets than an API.
+Do not use the same [SLO](/ubiq/#slo) for every service. A batch job has different targets than an API.
 
 ## On-call Rotation Template
 
 | Element | Recommendation |
 |---------|---------------|
-| Rotation length | 1 week |
-| Team size per rotation | Minimum 2 (primary + secondary) |
+| [Rotation](/ubiq/#rotation) length | 1 week |
+| Team size per rotation | Minimum 2 (primary + [secondary](/ubiq/#on-call)) |
 | Secondary escalation | Names a person, not a team |
-| Handover | 15-minute sync at rotation change. Review open incidents and known issues. |
+| [Handover](/ubiq/#rotation) | 15-minute sync at rotation change. Review open incidents and known issues. |
 
 Adjust based on team size and incident frequency.
 
@@ -65,16 +65,16 @@ Adjust based on team size and incident frequency.
 
 Before a service receives production traffic:
 
-- [ ] Logs are collected and searchable
-- [ ] Metrics are collected and visible on the team dashboard
+- [ ] [Logs](/ubiq/#logs) are collected and searchable
+- [ ] [Metrics](/ubiq/#metrics) are collected and visible on the team dashboard
 - [ ] Alerts exist for likely failure modes
 - [ ] Deploy process is documented and repeatable
-- [ ] Rollback process is documented and tested
+- [ ] [Rollback](/ubiq/#rollback-plan) process is documented and tested
 - [ ] Data backup strategy is defined
 - [ ] Secrets and credentials are not in the code repository
 - [ ] Dependencies are documented (databases, APIs, third-party services)
 - [ ] Contact for each dependency is known
-- [ ] Runbook exists for known failure modes
+- [ ] [Runbook](/ubiq/#runbook) exists for known failure modes
 
 The team adds items to this list as the system grows.
 

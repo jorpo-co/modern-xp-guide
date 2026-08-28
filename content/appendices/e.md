@@ -11,9 +11,9 @@ meta:
 
 | Scope | Unit | Ends With | Notes |
 |-------|------|-----------|-------|
-| Task | Smallest actionable unit | Task complete | No constraint on count |
-| Test | One behavior scenario | Test written + reviewed | One per Gherkin scenario |
-| Use Case | Structured goal-level spec | Scenarios written + Tests written + Tasks defined | One per Aggregate |
-| Story | Value placeholder | Prioritized + accepted | Maps to 0+ Use Cases |
-| Delivery | Coherent batch of use cases | Release | No constraint on duration |
-| Direction | Continuous | Revisited regularly | Not a closed loop |
+| [Task](/ubiq/#task) | Smallest actionable unit | Task complete | No constraint on count |
+| [Test](/ubiq/#test) | One behavior scenario | Test written + reviewed | One per [Gherkin](/ubiq/#gherkin) scenario |
+| [Use Case](/ubiq/#use-case) | Structured goal-level spec | Scenarios written + Tests written + Tasks defined | One per [Aggregate](/ubiq/#aggregate) |
+| [Story](/ubiq/#story) | Value placeholder | Prioritized + accepted | Maps to 0+ Use Cases |
+| [Delivery](/ubiq/#delivery) | Coherent batch of use cases | [Release](/ubiq/#release) | No constraint on duration |
+| [Direction](/ubiq/#direction) | Continuous | Revisited regularly | Not a closed loop |

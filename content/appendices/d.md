@@ -10,13 +10,13 @@ meta:
 # Appendix D: Feedback Loops
 
 ```
-Production Data
+[Production Data](/ubiq/#production-data)
   |
-  +--> Issues: user reports, incidents, feature adoption signals
+  +--> [Issues](/ubiq/#issue): user reports, [Incidents](/ubiq/#incident), [feature adoption](/ubiq/#feature-adoption) signals
          |
-         +--> Direction: Issues change Missions or Goals
-         +--> Work Items: Issues become Features, Stories, or Spikes
-         +--> Delivery: Incidents add technical debt or process improvements
+         +--> [Direction](/ubiq/#direction): Issues change [Missions](/ubiq/#missions) or [Goals](/ubiq/#goals)
+         +--> [Work Items](/ubiq/#work-item): Issues become [Features](/ubiq/#feature), [Stories](/ubiq/#story), or [Spikes](/ubiq/#spike)
+         +--> [Delivery](/ubiq/#delivery): Incidents add [technical debt](/ubiq/#technical-debt) or process improvements
 ```
 
-Domain boundaries can change as the team learns. Document changes as ADRs. Do not freeze outputs from the first exploration.
+[Domain](/ubiq/#domain) boundaries can change as the team learns. Document changes as [ADRs](/ubiq/#adr). Do not freeze outputs from the first exploration.

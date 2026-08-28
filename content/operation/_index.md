@@ -15,7 +15,7 @@ Continuous. Starts after the first Release. Runs across all later Releases.
 
 Monitor at three tiers: business, application, infrastructure.
 
-- Business: feature adoption, funnel completion, user behavior
+- Business: [feature adoption](/ubiq/#feature-adoption), funnel completion, [user behavior](/ubiq/#user-behavior)
 - Application: latency, error rate, throughput
 - Infrastructure: CPU, memory, disk
 
@@ -27,7 +27,7 @@ One dashboard for stakeholders, one for the team. Do not mix them.
 
 ## Incident Response
 
-Define severity levels:
+Define [severity levels](/ubiq/#sev1-4):
 
 | Level | Meaning |
 |-------|---------|
@@ -36,25 +36,25 @@ Define severity levels:
 | SEV3 | No user impact, fix required |
 | SEV4 | Cosmetic or internal only |
 
-Write a runbook for every incident type that repeats. If the same incident happens twice without a runbook, that is a process gap.
+Write a [runbook](/ubiq/#runbook) for every incident type that repeats. If the same incident happens twice without a runbook, that is a process gap.
 
-Run a blameless post-mortem soon after each incident. Produce one to three action items.
+Run a [blameless post-mortem](/ubiq/#blameless-post-mortem) soon after each incident. Produce one to three action items.
 
 **When to skip:** Team of two to three, no external users. Fix the problem, talk after.
 
 ## On-call
 
-Rotate fairly. Document the handover process. Name a secondary escalation for when the primary does not respond.
+[Rotate](/ubiq/#rotation) fairly. Document the handover process. Name a secondary escalation for when the primary does not respond.
 
-Track toil. If on-call spends more than 30% of time on repetitive tasks, automate the task. If more than 50%, rotate more people in or change the system.
+Track [toil](/ubiq/#toil). If [on-call](/ubiq/#on-call) spends more than 30% of time on repetitive tasks, automate the task. If more than 50%, rotate more people in or change the system.
 
 **When to skip:** No production users. Everyone is on-call anyway.
 
 ## Service Levels
 
-Pick one or two metrics that matter most to users. Track them as SLOs. Do not track more than three.
+Pick one or two metrics that matter most to users. Track them as [SLOs](/ubiq/#slo). Do not track more than three.
 
-The gap between the SLO and actual performance is the error budget. Use it to decide between features and reliability:
+The gap between the SLO and actual performance is the [error budget](/ubiq/#error-budget). Use it to decide between features and reliability:
 
 - Error budget full: ship features
 - Error budget low: fix reliability
@@ -63,11 +63,11 @@ The gap between the SLO and actual performance is the error budget. Use it to de
 
 ## Production Readiness
 
-A new service needs these before it receives production traffic:
+A new service needs these before it receives production traffic — see the full [Production Readiness checklist](/ubiq/#production-readiness):
 
-- Logging and metric collection
+- [Logging](/ubiq/#logs) and [metric](/ubiq/#metrics) collection
 - Alerting for likely failure modes
-- A deploy and rollback process
+- A deploy and [rollback](/ubiq/#rollback-plan) process
 - Backup strategy
 
 Review the checklist at a team meeting. Do not skip items. Add items as the team learns.
@@ -76,15 +76,15 @@ Review the checklist at a team meeting. Do not skip items. Add items as the team
 
 ## Production Feedback
 
-Production data flows back to Direction and Delivery:
+[Production data](/ubiq/#production-data) flows back to [Direction](/ubiq/#direction) and [Delivery](/ubiq/#delivery):
 
-- User behavior changes Missions or Goals
-- Feature adoption creates new Issues or deprioritizes existing ones
-- Incidents and bottlenecks add technical debt Stories or process improvements
+- [User behavior](/ubiq/#user-behavior) changes [Missions](/ubiq/#missions) or [Goals](/ubiq/#goals)
+- [Feature adoption](/ubiq/#feature-adoption) creates new [Issues](/ubiq/#issue) or deprioritizes existing ones
+- [Incidents](/ubiq/#incident) and bottlenecks add [technical debt](/ubiq/#technical-debt) Stories or process improvements
 
 ## Cost Management
 
-One person reviews infrastructure costs once per cycle. A 15-minute review. Not a meeting.
+One person reviews infrastructure [costs](/ubiq/#cost-management) once per cycle. A 15-minute review. Not a meeting.
 
 Act when cost grows faster than user growth. Act when one service exceeds 20% of the infrastructure budget.
 
@@ -92,13 +92,13 @@ Act when cost grows faster than user growth. Act when one service exceeds 20% of
 
 ## Friction Budget
 
-Track the time the team spends on process versus in process.
+Track the time the team spends on process versus in process — the [Friction Budget](/ubiq/#friction-budget).
 
-- Process activities: gate reviews, meeting attendance, preparation
-- Delivery activities: coding, testing, designing, shipping
+- [Process activities](/ubiq/#process-activities): gate reviews, meeting attendance, preparation
+- [Delivery activities](/ubiq/#delivery-activities): coding, testing, designing, shipping
 
-Do not measure precisely. Estimate at each retro: "What fraction of our time went to process?" If the answer exceeds 20%, cut one process item.
+Do not measure precisely. Estimate at each [retro](/ubiq/#retrospective-retro): "What fraction of our time went to process?" If the answer exceeds 20%, cut one process item.
 
-Cut first: meetings with no written agenda, gates that never fail, reports that no one reads, approvals that are always approved.
+Cut first: meetings with no written agenda, [gates](/ubiq/#gate) that never fail, reports that no one reads, approvals that are always approved.
 
 **When to skip:** The team already discusses this naturally.

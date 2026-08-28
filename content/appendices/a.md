@@ -11,8 +11,8 @@ meta:
 
 | Level | Question | When to Use | Output |
 |-------|----------|-------------|--------|
-| **Big Picture** | "What happens in this domain within our Mission?" | Domain is unfamiliar or the team does not share a mental model | Domain events, commands, pain points, bounded contexts, candidate Issues |
-| **Process / Design** | "How do we design this specific Feature?" | A known Feature has unclear internal flows | Detailed flows, aggregate design, acceptance criteria |
+| **[Big Picture](/ubiq/#big-picture-event-storming)** | "What happens in this [domain](/ubiq/#domain) within our [Mission](/ubiq/#missions)?" | Domain is unfamiliar or the team does not share a mental model | [Domain events](/ubiq/#domain-event), [commands](/ubiq/#command), [pain points](/ubiq/#pain-point), [bounded contexts](/ubiq/#bounded-context), [candidate Issues](/ubiq/#candidate-issue) |
+| **[Process / Design](/ubiq/#process-design-event-storming)** | "How do we design this specific [Feature](/ubiq/#feature)?" | A known Feature has unclear internal flows | Detailed flows, [aggregate design](/ubiq/#aggregate-design), [acceptance criteria](/ubiq/#acceptance-criteria) |
 
 **Big Picture** discovers what problems exist. Use it when you need shared understanding. Do not use it if you already have it.
 

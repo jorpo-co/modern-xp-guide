@@ -19,7 +19,7 @@ Data removal is available on request. If you have any questions about how your i
 
 ## Analytics
 
-This site uses [Umami](https://umami.is), a privacy-focused, open-source analytics platform, via their managed cloud service.
+This site uses [Umami](/ubiq/#umami), a privacy-focused, open-source analytics platform, via their managed cloud service.
 
 Umami does not use cookies, does not collect any personally identifiable information, and does not track visitors across websites. All data is anonymised and aggregated. No cookie consent banner is required.
 
@@ -35,7 +35,7 @@ The information collected is limited to:
 
 Analytics data is processed and stored on Umami's infrastructure. Umami acts as a data processor on our behalf and does not use this data for any other purpose. You can review Umami's privacy policy at [umami.is/privacy](https://umami.is/privacy).
 
-This analytics setup is compliant with GDPR, CCPA, and PECR.
+This analytics setup is compliant with [GDPR](/ubiq/#gdpr), [CCPA](/ubiq/#ccpa), and [PECR](/ubiq/#pecr).
 
 ## Comments
 

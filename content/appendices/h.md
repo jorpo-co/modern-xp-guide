@@ -12,8 +12,8 @@ meta:
 | Element | Description |
 |---------|-------------|
 | **ID** | Unique identifier (e.g., T-42) |
-| **Source** | Use Case ID + scenario name, or Story ID |
-| **Scenario** | Gherkin Given/When/Then |
+| **[Source](/ubiq/#source-test)** | [Use Case](/ubiq/#use-case) ID + scenario name, or [Story](/ubiq/#story) ID |
+| **[Scenario](/ubiq/#scenario)** | [Gherkin](/ubiq/#gherkin) Given/When/Then |
 | **Type** | Acceptance \| Integration \| System |
-| **Preconditions** | Environment or data setup needed |
-| **Expected result** | What passing means |
+| **[Preconditions](/ubiq/#preconditions)** | Environment or data setup needed |
+| **[Expected result](/ubiq/#expected-result)** | What passing means |
