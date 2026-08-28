@@ -115,6 +115,11 @@ html, body {
   transition: color 0.15s;
 }
 
+.sidebar-footer a .icon-github {
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
 .sidebar-footer a:hover,
 .sidebar-footer a.active {
   color: var(--epaper-fg);
