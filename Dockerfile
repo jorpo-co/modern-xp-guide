@@ -13,7 +13,7 @@ COPY . .
 # --- Dev target: live reload ---
 FROM base AS dev
 EXPOSE 1313
-CMD ["hugo", "server", "--bind", "0.0.0.0", "--baseURL", "http://modern-xp.jorpo.loco/", "--appendPort=false", "--disableFastRender", "--environment", "development"]
+CMD ["hugo", "server", "--bind", "0.0.0.0", "--baseURL", "//modern-xp.jorpo.loco/", "--appendPort=false", "--disableFastRender", "--environment", "development"]
 
 # --- Build stage: generate static files ---
 FROM base AS build
