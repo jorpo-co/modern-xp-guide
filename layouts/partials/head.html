@@ -68,4 +68,9 @@
 
 {{- $headingJs := resources.Get "js/heading-scroll.js" | js.Build (dict "minify" true) }}
 <script src="{{ $headingJs.RelPermalink }}" defer></script>
+
+{{- $ubiqJs := resources.Get "js/ubiq-tooltips.js" | js.Build (dict "minify" true) }}
+<script src="{{ $ubiqJs.RelPermalink }}" defer></script>
+
 <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.umami_id }}" data-cfasync="false"></script>
+{{ partial "ubiq-defs.html" . }}

@@ -1,0 +1,32 @@
+{{- /*
+  ubiq-defs.html — Extracts term definitions from the Ubiquitous Language page
+  and injects them as a JSON script so tooltip JS can use them.
+*/ -}}
+{{- $ubiq := .Site.GetPage "/ubiq" -}}
+{{- $raw := $ubiq.RawContent -}}
+{{- $defs := dict -}}
+
+{{- /* Split on anchors and process each block */ -}}
+{{- $blocks := split $raw `<a id="` -}}
+{{- range $i, $block := $blocks -}}
+  {{- if gt $i 0 -}}
+    {{- $id := index (split $block `"`) 0 -}}
+    {{- $lines := split $block "\n" -}}
+    {{- $defLine := "" -}}
+    {{- range $lines -}}
+      {{- if and (eq $defLine "") (hasPrefix . ": ") -}}
+        {{- $defLine = . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if $defLine -}}
+      {{- /* Strip \r, the ": " prefix, then take everything before ". " */ -}}
+      {{- $text := replace $defLine "\r" "" -}}
+      {{- $text = substr $text 2 -}}
+      {{- $parts := split $text ". " -}}
+      {{- $first := index $parts 0 -}}
+      {{- $defs = merge $defs (dict $id $first) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<script>window.ubiqDefs = {{ $defs | jsonify | safeJS }};</script>

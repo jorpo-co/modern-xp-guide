@@ -216,6 +216,22 @@ html, body {
   color: var(--epaper-fg-muted);
 }
 
+/* Tooltip for Ubiquitous Language hover definitions */
+.ubiq-tooltip {
+  position: fixed;
+  z-index: 1000;
+  max-width: 32rem;
+  padding: var(--epaper-space-3) var(--epaper-space-4);
+  background: var(--epaper-bg);
+  border: var(--epaper-border-thin) solid var(--epaper-border-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  font-size: var(--epaper-text-sm);
+  line-height: 1.5;
+  color: var(--epaper-fg);
+  pointer-events: none;
+}
+
 /* Mobile */
 
 @media (max-width: 48rem) {
