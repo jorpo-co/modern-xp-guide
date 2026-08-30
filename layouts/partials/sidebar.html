@@ -20,7 +20,7 @@
       </li>
 
       {{ range site.Sections.ByWeight }}
-        {{ if not (eq .RelPermalink "/appendices/") }}
+        {{ if and (not (eq .RelPermalink "/appendices/")) (not (eq .Section "in-practice")) }}
         <li>
           <a href="{{ .RelPermalink }}"
              class="{{ if eq $current .RelPermalink }}active{{ end }}">
@@ -30,6 +30,28 @@
             {{ partial "headings-menu.html" $currentPage }}
           {{ end }}
         </li>
+        {{ end }}
+      {{ end }}
+
+      <li><hr class="divider"></li>
+
+      {{ with site.GetPage "/in-practice" }}
+        <li>
+          <a href="{{ .RelPermalink }}"
+             class="{{ if hasPrefix $current .RelPermalink }}active{{ end }}">
+            {{ .Title }}
+          </a>
+          {{ if eq $current .RelPermalink }}
+            {{ partial "headings-menu.html" $currentPage }}
+          {{ end }}
+        </li>
+        {{ range .RegularPages.ByWeight }}
+          <li>
+            <a href="{{ .RelPermalink }}"
+               class="subsection {{ if eq $current .RelPermalink }}active{{ end }}">
+              {{ .Title }}
+            </a>
+          </li>
         {{ end }}
       {{ end }}
 

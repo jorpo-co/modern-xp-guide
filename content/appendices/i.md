@@ -37,7 +37,7 @@ Steps:
 Escalation: [Who to contact if the steps do not resolve the incident]
 ```
 
-Write a [runbook](/ubiq/#runbook) for every incident type that repeats twice.
+Write a [runbook](/ubiq/#runbook) for any incident type the team expects to meet again. The team decides when one is needed.
 
 ## SLO Design Patterns
 
@@ -48,7 +48,7 @@ Write a [runbook](/ubiq/#runbook) for every incident type that repeats twice.
 | p99 latency | 1s | 5 minutes averaged over 30 days |
 | Error rate | <1% of requests | 10 minutes averaged over 30 days |
 
-Do not use the same [SLO](/ubiq/#slo) for every service. A batch job has different targets than an API.
+Do not use the same [SLO](/ubiq/#slo-service-level-objective) for every service. A batch job has different targets than an API.
 
 ## On-call Rotation Template
 

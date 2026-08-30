@@ -32,7 +32,7 @@ An [Aggregate](/ubiq/#aggregate) (DDD) defines a [consistency boundary](/ubiq/#c
 - **The [application or service layer](/ubiq/#application-layer)** handles coordination between Aggregates. The Use Case does not.
 - **[Commands](/ubiq/#command) map to Use Case flows.** The [main success scenario](/ubiq/#main-success-scenario) uses the primary command. [Extensions](/ubiq/#extension) use alternate commands or error states in the same Aggregate.
 
-This is a guideline, not a rule. If crossing aggregate boundaries simplifies the design and the team understands the trade-offs, do it. Document the trade-off in an [ADR](/ubiq/#adr).
+This is a guideline, not a rule. If crossing aggregate boundaries simplifies the design and the team understands the trade-offs, do it. Document the trade-off in an [ADR](/ubiq/#adr-architecture-decision-record).
 
 ## Use Case Structure Template
 
@@ -54,20 +54,20 @@ This is a guideline, not a rule. If crossing aggregate boundaries simplifies the
 
 ```
 UC-5: Customer cancels an order
-[Primary Actor](/ubiq/#primary-actor): Customer
+Primary Actor: Customer
 Scope: Order aggregate
-[Level](/ubiq/#level): User goal
+Level: User goal
 
-[Preconditions](/ubiq/#preconditions):
+Preconditions:
 - Customer is authenticated
 - Order exists and is in "confirmed" or "processing" state
 
-[Postconditions](/ubiq/#postconditions):
+Postconditions:
 - Order enters "cancelled" state
 - Inventory is restored
 - Refund workflow starts
 
-[Main Success Scenario](/ubiq/#main-success-scenario):
+Main Success Scenario:
 1. Customer requests cancellation
 2. System checks order is cancellable
 3. System changes order state to "cancelled"
@@ -75,7 +75,7 @@ Scope: Order aggregate
 5. System triggers refund
 6. System tells the customer
 
-[Extensions](/ubiq/#extension):
+Extensions:
 2a. Order is already shipped:
   2a1. System rejects cancellation
   2a2. System offers return flow instead

@@ -1,7 +1,7 @@
 # --- Base stage with Hugo and Go ---
 FROM golang:1.26-alpine AS base
 RUN apk add --no-cache git nodejs npm
-RUN go install github.com/gohugoio/hugo@v0.157.0
+RUN go install github.com/gohugoio/hugo@latest
 RUN npm install -g pnpm
 
 WORKDIR /src

@@ -33,11 +33,11 @@ The [Roadmap](/ubiq/#roadmap) changes freely based on what the team learns.
 
 ## Stories
 
-A Story is a lightweight value placeholder for a slice of a Feature. It exists for prioritization, roadmap planning, and stakeholder communication. It is not a specification.
+A Story is a lightweight value placeholder for a slice of a Feature. It exists for prioritisation, roadmap planning, and stakeholder communication. It is not a specification.
 
 - A Story has a title, a [value statement](/ubiq/#value-statement), and a priority.
 - A Story is independent. The team can order and deliver it without other Stories.
-- The team orders Stories to resolve dependencies, not to maximize theoretical value.
+- The team orders Stories to resolve dependencies, not to maximise theoretical value.
 
 **No [acceptance criteria](/ubiq/#acceptance-criteria) on Stories by default.** A Story can evolve into a [Use Case](/ubiq/#use-case) (full structured spec) or stay lightweight with criteria + [Tasks](/ubiq/#task) + [Tests](/ubiq/#test). The team adds fidelity based on need. For trivial work, write lightweight acceptance notes on the Story. The rule: acceptance criteria must exist *somewhere* before building. The Use Case is the highest-fidelity form. The Story is the fallback for trivial work.
 
@@ -79,7 +79,7 @@ A Spike is a timeboxed investigation. Use it when unknowns block delivery.
 |---------|---------|--------|
 | Technical unknown | Short fixed [timebox](/ubiq/#timebox) | Decision record, [prototype](/ubiq/#prototype), or rejected option |
 | Domain unknown | Short fixed timebox | Clarified flow or [Process/Design Event Storming](/ubiq/#process-design-event-storming) |
-| Architectural unknown | Short fixed timebox | [ADR](/ubiq/#adr) (Architecture Decision Record) |
+| Architectural unknown | Short fixed timebox | [ADR](/ubiq/#adr-architecture-decision-record) (Architecture Decision Record) |
 
 Spikes do not produce production code. If a Spike exceeds its [timebox](/ubiq/#timebox), the team decides: rescope or run a [Go/No-Go](/ubiq/#go-no-go-gate) on the parent Feature.
 
@@ -97,7 +97,7 @@ A Task is a concrete, technology-agnostic implementation instruction that breaks
 
 **Characteristics:**
 - Technology-agnostic: describes *what* to implement, not *how* in a specific framework
-- One Task per discrete behavior change
+- One Task per discrete behaviour change
 - No prescribed file or module mapping
 
 Each Task has: [Inputs](/ubiq/#inputs), [Outputs](/ubiq/#outputs), [Constraints](/ubiq/#constraints), [Acceptance Criteria](/ubiq/#acceptance-criteria), and a [Definition of Done](/ubiq/#definition-of-done).
@@ -115,7 +115,7 @@ A Test is a versioned reference point for acceptance, integration, or system-lev
 
 **Characteristics:**
 - One Test per [Gherkin](/ubiq/#gherkin) scenario, the main success path and each extension
-- Technology-agnostic: describes the behavior to verify, not the test framework
+- Technology-agnostic: describes the behaviour to verify, not the test framework
 - Versioned alongside code
 
 Each Test has: ID, [Source](/ubiq/#source-test), [Scenario](/ubiq/#scenario), Type, [Preconditions](/ubiq/#preconditions), and [Expected Result](/ubiq/#expected-result).

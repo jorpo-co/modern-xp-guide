@@ -43,7 +43,7 @@ The Issues backlog holds everything the team is not actively working on. It is t
 
 ## Feedback Generates and Refines
 
-[Production data](/ubiq/#production-data), [user behavior](/ubiq/#user-behavior), monitoring alerts, [stakeholder](/ubiq/#stakeholder) input, and team pain points all produce Issues. This closes the loop:
+[Production data](/ubiq/#production-data), [user behaviour](/ubiq/#user-behavior), monitoring alerts, [stakeholder](/ubiq/#stakeholder) input, and team pain points all produce Issues. This closes the loop:
 
 <!-- ![Feedback Loop](/images/feedback_loop.png) -->
 

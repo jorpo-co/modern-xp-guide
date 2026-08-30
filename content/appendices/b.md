@@ -1,5 +1,5 @@
 ---
-title: "B: Roadmap & Prioritization"
+title: "B: Roadmap & Prioritisation"
 weight: 2
 sitemap:
   priority: 0.7
@@ -7,15 +7,15 @@ meta:
   description: "Lightweight roadmap with Now/Next buckets, impact ranking, and why numeric scores and Future buckets are rejected."
 ---
 
-# Appendix B: Roadmap and Prioritization
+# Appendix B: Roadmap and Prioritisation
 
-## How Features Get Prioritized
+## How Features Get Prioritised
 
-[Prioritization](/ubiq/#prioritization) is a conversation, not a formula.
+[Prioritisation](/ubiq/#prioritization) is a conversation, not a formula.
 
 - **If a feature matters, the team knows.** When the team disagrees, they talk for a few minutes. One feature wins. The loser stays in [Next](/ubiq/#next-roadmap-bucket) or becomes an [Issue](/ubiq/#issue).
 - **[Impact ranking](/ubiq/#impact-ranking) is the default.** Sort by gut-checked impact-to-effort. No scores, no spreadsheet. "If we ship only one thing this cycle, which one?"
-- **[Production data](/ubiq/#production-data) decides when available.** [Feature adoption](/ubiq/#feature-adoption), [user behavior](/ubiq/#user-behavior), and [Incidents](/ubiq/#incident) outrank opinion.
+- **[Production data](/ubiq/#production-data) decides when available.** [Feature adoption](/ubiq/#feature-adoption), [user behaviour](/ubiq/#user-behavior), and [Incidents](/ubiq/#incident) outrank opinion.
 
 Other lightweight patterns that fit this framework, when the team needs more structure:
 
@@ -44,6 +44,6 @@ The [Roadmap](/ubiq/#roadmap) has two buckets: **[Now](/ubiq/#now-roadmap-bucket
 | **[MoSCoW](/ubiq/#moscow) (Must/Should/Could/Won't)** | "Should" and "Could" are Future in disguise. Teams ignore the will-not items. Two buckets do the same work with less ceremony |
 | **[Kano model](/ubiq/#kano-model)** | Too abstract for cycle-level decisions. At most a quarterly [Direction](/ubiq/#direction) input, not a [Delivery](/ubiq/#delivery) tool |
 
-Good enough beats perfect. Pick the good enough next Feature and ship it. Learning from the shipped thing is worth more than optimizing the order of unshipped things.
+Good enough beats perfect. Pick the good enough next Feature and ship it. Learning from the shipped thing is worth more than optimising the order of unshipped things.
 
-When the team genuinely does not know what matters (early stage, new domain, no feedback yet), the answer is a [Spike](/ubiq/#spike) or the smallest shippable [Feature](/ubiq/#feature) that generates data, not a better prioritization formula. No formula resolves unknown unknowns.
+When the team genuinely does not know what matters (early stage, new domain, no feedback yet), the answer is a [Spike](/ubiq/#spike) or the smallest shippable [Feature](/ubiq/#feature) that generates data, not a better prioritisation formula. No formula resolves unknown unknowns.

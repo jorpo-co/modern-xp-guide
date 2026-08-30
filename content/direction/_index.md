@@ -13,7 +13,7 @@ Direction gives the team a shared understanding of where to go and why. It answe
 
 ## Vision, Missions, Goals
 
-The team holds one long-term **[Vision](/ubiq/#vision)**. Medium-term **[Missions](/ubiq/#missions)** describe what the team works toward now. Short-term **[Goals](/ubiq/#goals)** make missions concrete.
+The team holds one long-term **[Vision](/ubiq/#vision)**. Medium-term **[Missions](/ubiq/#missions)** describe what the team works towards now. Short-term **[Goals](/ubiq/#goals)** make missions concrete.
 
 - The Vision changes slowly, if at all. It guides the team. It is not a plan.
 - Missions change when the environment shifts. New market data, production signals, sponsor priorities. No minimum or maximum duration.
