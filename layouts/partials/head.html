@@ -72,5 +72,8 @@
 {{- $ubiqJs := resources.Get "js/ubiq-tooltips.js" | js.Build (dict "minify" true) }}
 <script src="{{ $ubiqJs.RelPermalink }}" defer></script>
 
+{{- $ubiqTabsJs := resources.Get "js/ubiq-tabs.js" | js.Build (dict "minify" true) }}
+<script src="{{ $ubiqTabsJs.RelPermalink }}" defer></script>
+
 <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.umami_id }}" data-cfasync="false"></script>
 {{ partial "ubiq-defs.html" . }}

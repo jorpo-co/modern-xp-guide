@@ -125,6 +125,21 @@ tr:last-child td {
   border-bottom: none;
 }
 
+/* Role tables: consistent column widths */
+.roles-tables table {
+  table-layout: fixed;
+}
+
+.roles-tables table th:first-child,
+.roles-tables table td:first-child {
+  width: 28%;
+}
+
+.roles-tables table th:last-child,
+.roles-tables table td:last-child {
+  width: 72%;
+}
+
 /* Blockquote — manifesto statements */
 
 blockquote {

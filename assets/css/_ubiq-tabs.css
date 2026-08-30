@@ -1,0 +1,104 @@
+/* ===========================================
+   UBIQ TABS — letter tabs for Ubiquitous Language
+   Styled with epaper design tokens
+   =========================================== */
+
+.ubiq-tablist {
+  display: flex;
+  gap: var(--epaper-space-1);
+  margin: var(--epaper-space-6) 0 0 0;
+  padding-bottom: var(--epaper-space-1);
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ubiq-tab {
+  flex: 0 0 auto;
+  min-width: var(--epaper-space-8);
+  padding: var(--epaper-space-2) var(--epaper-space-3);
+  font-family: var(--epaper-font-sans);
+  font-size: var(--epaper-text-sm);
+  font-weight: var(--epaper-weight-medium);
+  line-height: var(--epaper-line-tight);
+  color: var(--epaper-fg-muted);
+  background: none;
+  border: none;
+  border-bottom: var(--epaper-border-thick) solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background-color 0.15s;
+}
+
+.ubiq-tab:hover {
+  color: var(--epaper-fg);
+  background: var(--epaper-bg-muted);
+}
+
+.ubiq-tab:focus-visible {
+  outline: var(--epaper-border-medium) solid var(--epaper-focus-color);
+  outline-offset: calc(var(--epaper-grid) * 0.5);
+}
+
+.ubiq-tab.is-active {
+  color: var(--epaper-fg);
+  font-weight: var(--epaper-weight-bold);
+  border-bottom-color: var(--epaper-fg);
+}
+
+.ubiq-panel {
+  animation: ubiq-fade-in 0.2s ease-out;
+}
+
+.ubiq-panel[hidden] {
+  display: none;
+}
+
+/* Panel headings — keep the section letter visible inside the panel */
+
+.ubiq-panel h2 {
+  margin-top: var(--epaper-space-5);
+  margin-bottom: var(--epaper-space-4);
+  padding-top: var(--epaper-space-4);
+}
+
+@keyframes ubiq-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--epaper-space-1));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reduce motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .ubiq-panel {
+    animation: none;
+  }
+  .ubiq-tab {
+    transition: none;
+  }
+}
+
+/* Mobile — full-width tab strip */
+
+@media (max-width: 48rem) {
+  .ubiq-tablist {
+    margin: var(--epaper-space-4) 0;
+    gap: var(--epaper-space-1);
+  }
+
+  .ubiq-tab {
+    padding: var(--epaper-space-2) var(--epaper-space-2);
+    min-width: var(--epaper-space-7);
+    font-size: var(--epaper-text-sm);
+  }
+
+  .ubiq-panel h2 {
+    margin-top: var(--epaper-space-4);
+  }
+}
