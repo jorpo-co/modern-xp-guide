@@ -9,7 +9,7 @@ Written in Simple Technical English. No fluff. No jargon.
 1. **Ship small, learn fast.** The smallest valuable unit of work, delivered independently, is better than the most perfectly planned batch.
 2. **Feedback is the only ground truth.** Production data, user behavior, and team sentiment override any plan.
 3. **Process has cost.** Every gate, output review, and meeting consumes energy. If a process element does not earn more than it costs, remove it.
-4. **Unknowns kill delivery.** Find them early. Spike before you commit.
+4. **Unknowns kill delivery.** Find them early. Study before you commit.
 5. **Complexity must be contained.** Deliberate boundaries on scope, consistency, and responsibility prevent systems that the team can change and maintain.
 6. **Teams make predictable errors.** Catch them with automation and peer review, not process overhead.
 7. **Judgment over rules.** No rule applies in all contexts. The team decides when to follow, bend, or break any practice here.
@@ -57,7 +57,7 @@ The team holds one long-term **Vision**. Medium-term **Missions** describe what 
 
 The team revisits direction at a cadence the team chooses. Between reviews, the team can change goals without permission. A mission change requires a conversation with stakeholders.
 
-**Prepare to succeed.** Do enough discovery to move forward: spike unknowns, sketch boundaries, talk to users. Do not plan the path before you walk it. Heavy plans belong in failure-mode scenarios (disaster recovery, incident response), not daily delivery.
+**Prepare to succeed.** Do enough discovery to move forward: study unknowns, sketch boundaries, talk to users. Do not plan the path before you walk it. Heavy plans belong in failure-mode scenarios (disaster recovery, incident response), not daily delivery.
 
 ### 1.2 Domain Exploration
 
@@ -102,7 +102,7 @@ When the team decides to act on an Issue, it becomes a Work Item:
 |-----------------|-----------|
 | Needs investment, multiple cycles | **Feature** on the roadmap |
 | Small, one-cycle slice | **Story** in the current cycle |
-| Unknown blocks resolution | **Spike** to investigate |
+| Unknown blocks resolution | **Study** to investigate |
 | Quick fix, no delivery structure | Resolved directly, Issue closed |
 
 Not every Issue becomes a Work Item. Some get resolved directly: answer a Question, fix a configuration bug, handle an Incident. The Issue closes with its resolution documented.
@@ -127,7 +127,7 @@ The Issues list never stops growing. The team triages continuously. Some Issues 
 
 1. **Capture:** An Issue enters the system. Source can be anyone: team, user, stakeholder, monitoring.
 2. **Triage:** The team understands it, labels it (Problem/Idea/Question/Incident), and decides what to do.
-3. **Resolve:** Either (a) resolved directly (answer, fix, config change), (b) promoted to a Work Item (Feature, Story, Spike), or (c) parked for later review.
+3. **Resolve:** Either (a) resolved directly (answer, fix, config change), (b) promoted to a Work Item (Feature, Story, Study), or (c) parked for later review.
 4. **Close:** The Issue is resolved, abandoned (out of scope, superseded), or parked. Closed Issues are searchable but not actionable.
 
 ---
@@ -192,9 +192,9 @@ One Use Case maps to one Aggregate. If the scenario crosses aggregate boundaries
 | Very early stage (pre-product-market fit) | Paper prototypes + direct conversation. Retroactively write full UC if structure unclear. |
 | Story does not need full UC fidelity | Criteria + Tasks + Tests on the Story. No formal Use Case template. |
 
-### 3.4 Spikes
+### 3.4 Studies
 
-A Spike is a timeboxed investigation. Use it when unknowns block delivery.
+A Study is a timeboxed investigation. Use it when unknowns block delivery.
 
 | Trigger | Timebox | Output |
 |---------|---------|--------|
@@ -202,7 +202,7 @@ A Spike is a timeboxed investigation. Use it when unknowns block delivery.
 | Domain unknown | Short fixed timebox | Clarified flow or Process/Design Event Storming |
 | Architectural unknown | Short fixed timebox | ADR (Architecture Decision Record) |
 
-Spikes do not produce production code. If a Spike exceeds its timebox, the team decides: rescope or run a Go/No-Go on the parent Feature.
+Studies do not produce production code. If a Study exceeds its timebox, the team decides: rescope or run a Go/No-Go on the parent Feature.
 
 ### 3.5 Chores
 
@@ -537,7 +537,7 @@ Issues (Idea type) handle "Future" as an inbox for raw ideas. Ideas live in Issu
 
 Good enough beats perfect. Pick the good enough next Feature and ship it. Learning from the shipped thing is worth more than optimizing the order of unshipped things.
 
-When the team genuinely does not know what matters (early stage, new domain, no feedback yet), the answer is a Spike or the smallest shippable Feature that generates data, not a better prioritization formula. No formula resolves unknown unknowns.
+When the team genuinely does not know what matters (early stage, new domain, no feedback yet), the answer is a Study or the smallest shippable Feature that generates data, not a better prioritization formula. No formula resolves unknown unknowns.
 
 ---
 
@@ -625,7 +625,7 @@ Production Data
   +--> Issues (§2): user reports, incidents, feature adoption signals
          |
          +--> Direction (§1): Issues change Missions or Goals
-         +--> Work Items (§3): Issues become Features, Stories, or Spikes
+         +--> Work Items (§3): Issues become Features, Stories, or Studies
          +--> Delivery (§4): Incidents add technical debt or process improvements
 ```
 
@@ -656,7 +656,7 @@ This framework does not restrict you. Here are specific conditions that mean "sk
 | Crisis / production outage | Drop all process. Fix the issue. Retro after. |
 | Team < 3 people | Drop reviews, retros, and flags. Talk directly. |
 | AI-assisted rapid prototyping | Skip TDD, skip pair programming, skip Stories. Generate, review, ship. |
-| Pure maintenance / no new features | Drop spikes, domain exploration, roadmap. Move to ticketed bug fixes only. |
+| Pure maintenance / no new features | Drop Studies, domain exploration, roadmap. Move to ticketed bug fixes only. |
 | Team is demotivated by process | Cut process by 50%. If energy returns, cut more. |
 | A rule takes longer than the work it governs | Abolish the rule immediately. No vote needed. |
 
@@ -787,7 +787,7 @@ Act when cost grows faster than user growth or one service exceeds 20% of the bu
 
 **Actor** — Entity that starts an interaction with the system. Primary actor starts the Use Case.
 
-**ADR (Architecture Decision Record)** — Document that captures an architectural decision, its context, and trade-offs. Output of Spikes and domain boundary changes.
+**ADR (Architecture Decision Record)** — Document that captures an architectural decision, its context, and trade-offs. Output of Studies and domain boundary changes.
 
 **Aggregate** — Cluster of domain objects treated as one unit for changes. Defines a consistency boundary. One Use Case maps to one Aggregate.
 
@@ -943,7 +943,7 @@ Act when cost grows faster than user growth or one service exceeds 20% of the bu
 
 **Production Readiness** — Checklist a new service passes before it receives production traffic: logging, alerts, deploy/rollback process, backup strategy.
 
-**Prototype** — Possible Spike output. Working model to evaluate an approach, not production code.
+**Prototype** — Possible Study output. Working model to evaluate an approach, not production code.
 
 ### Q
 
@@ -979,7 +979,7 @@ Act when cost grows faster than user growth or one service exceeds 20% of the bu
 
 **SLO (Service Level Objective)** — One or two metrics that matter most to users. Track the gap as error budget to decide features vs reliability.
 
-**Spike** — Timeboxed investigation for technical, domain, or architectural unknowns. Produces decision record, prototype, or ADR. No production code.
+**Study** — Timeboxed investigation for technical, domain, or architectural unknowns. Produces decision record, prototype, or ADR. No production code.
 
 **Story** — Lightweight value placeholder for a slice of a Feature. Title, value statement, priority. Independent. No estimates required.
 
@@ -995,7 +995,7 @@ Act when cost grows faster than user growth or one service exceeds 20% of the bu
 
 **Time to Restore** — DORA metric for time to recover from a production failure.
 
-**Timebox** — Fixed short duration for a Spike. If exceeded, rescope or run Go/No-Go on parent Feature.
+**Timebox** — Fixed short duration for a Study. If exceeded, rescope or run Go/No-Go on parent Feature.
 
 **Toil** — Repetitive operational work. If on-call spends more than 30% of time on toil, automate the task.
 
@@ -1013,4 +1013,4 @@ Act when cost grows faster than user growth or one service exceeds 20% of the bu
 
 ### W
 
-**Work Item** — How the team resolves Issues. Types: Feature, Story, Use Case, Spike, Chore, Task, Test.
+**Work Item** — How the team resolves Issues. Types: Feature, Story, Use Case, Study, Chore, Task, Test.

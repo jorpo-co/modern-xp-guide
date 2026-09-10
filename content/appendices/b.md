@@ -46,4 +46,4 @@ The [Roadmap](/ubiq/#roadmap) has two buckets: **[Now](/ubiq/#now-roadmap-bucket
 
 Good enough beats perfect. Pick the good enough next Feature and ship it. Learning from the shipped thing is worth more than optimising the order of unshipped things.
 
-When the team genuinely does not know what matters (early stage, new domain, no feedback yet), the answer is a [Spike](/ubiq/#spike) or the smallest shippable [Feature](/ubiq/#feature) that generates data, not a better prioritisation formula. No formula resolves unknown unknowns.
+When the team genuinely does not know what matters (early stage, new domain, no feedback yet), the answer is a [Study](/ubiq/#study) or the smallest shippable [Feature](/ubiq/#feature) that generates data, not a better prioritisation formula. No formula resolves unknown unknowns.

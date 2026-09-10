@@ -47,9 +47,9 @@ Capture → Triage → Decide → Act (resolve or promote) → Close
 **Incident (production failure):**
 
 ```
-Capture → Triage → Fix immediately → Post-mortem → 
+Capture → Triage → Fix immediately → Post-mortem →
   ├── Close (one-off)
-  └── Promote to Problem (recurring pattern) → Feature or Spike
+  └── Promote to Problem (recurring pattern) → Feature or Study
 ```
 
 Incidents skip the normal queue. Fix first, classify after.
@@ -65,12 +65,12 @@ No Work Item needed.
 **Problem with unknown root cause:**
 
 ```
-Capture → Triage → Spike → 
+Capture → Triage → Study →
   ├── Root cause found → Feature or Story to fix
   └── Hypothesis killed → Close, document finding
 ```
 
-Spike is the tool for unknowns. Never commit to fixing a Problem whose root cause you do not understand.
+Study is the tool for unknowns. Never commit to fixing a Problem whose root cause you do not understand.
 
 **Infeasible or out-of-scope Idea:**
 
@@ -123,7 +123,7 @@ When the same Problem surfaces repeatedly, the guiderails may need adjustment.
 | Artifact | Produced By | Consumed By | Format |
 |---|---|---|---|
 | **Issue Card** | Issue Guide session or manual capture | Backlog, Work Item creation | Markdown: type, description, source, next step |
-| **Problem Card** | Issue Guide session | Feature, Spike | Structured: title, impact, area, suspected cause |
+| **Problem Card** | Issue Guide session | Feature, Study | Structured: title, impact, area, suspected cause |
 | **Idea Card** | Issue Guide session | Feature | Structured: current flow, desired flow, success measure |
 | **Question Card** | Issue Guide session | Research task | Structured: unknown, why it matters, where to look |
 | **Incident Card** | Issue Guide session or on-call tool | Post-mortem, Problem | Structured: severity, timeline, services, status |

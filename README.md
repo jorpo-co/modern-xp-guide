@@ -1,6 +1,6 @@
 # Modern XP: A Field Guide
 
-A Hugo website that publishes the Modern XP field guide. Content covers direction, features, stories, spikes, use cases, issues, chores, decision records, and other XP practices.
+A Hugo website that publishes the Modern XP field guide. Content covers direction, features, stories, studies, use cases, issues, chores, decision records, and other XP practices.
 
 ## Comments
 

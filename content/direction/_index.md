@@ -21,7 +21,7 @@ The team holds one long-term **[Vision](/ubiq/#vision)**. Medium-term **[Mission
 
 The team revisits direction at a cadence the team chooses. Between reviews, the team can change goals without permission. A mission change requires a conversation with stakeholders.
 
-**Prepare to succeed.** Do enough discovery to move forward: [spike](/ubiq/#spike) [unknowns](/ubiq/#unknowns), sketch boundaries, talk to users. Do not plan the path before you walk it. Heavy plans belong in failure-mode scenarios (disaster recovery, incident response), not daily delivery.
+**Prepare to succeed.** Do enough discovery to move forward: [study](/ubiq/#study) [unknowns](/ubiq/#unknowns), sketch boundaries, talk to users. Do not plan the path before you walk it. Heavy plans belong in failure-mode scenarios (disaster recovery, incident response), not daily delivery.
 
 ## Domain Exploration
 

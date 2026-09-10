@@ -15,7 +15,7 @@ In Practice is a selection guide. The guide says what each stage *is*. These pag
 |---|---|
 | **[Direction](/in-practice/direction/)** | Vision, Missions, Goals, Domain Exploration |
 | **[Issues](/in-practice/issues/)** | Surface, classify, triage, resolve all issue types |
-| **[Work Items](/in-practice/work-items/)** | Features, Stories, Use Cases, Spikes, Chores, Tasks, Tests |
+| **[Work Items](/in-practice/work-items/)** | Features, Stories, Use Cases, Studies, Chores, Tasks, Tests |
 | **[Delivery](/in-practice/delivery/)** | Build, Verify, Review, Release phases |
 | **[Operation](/in-practice/operation/)** | Monitor, respond, on-call, cost, reliability |
 | **[Cross-Cutting](/in-practice/cross-cutting/)** | Principles, policies, governance that apply everywhere |

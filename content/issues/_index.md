@@ -34,7 +34,7 @@ When the team decides to act on an Issue, it becomes a [Work Item](/ubiq/#work-i
 |-----------------|-----------|
 | Needs investment, multiple cycles | **[Feature](/ubiq/#feature)** on the [roadmap](/ubiq/#roadmap) |
 | Small, one-cycle slice | **[Story](/ubiq/#story)** in the current cycle |
-| Unknown blocks resolution | **[Spike](/ubiq/#spike)** to investigate |
+| Unknown blocks resolution | **[Study](/ubiq/#study)** to investigate |
 | Quick fix, no delivery structure | Resolved directly, Issue closed |
 
 Not every Issue becomes a Work Item. Some get resolved directly: answer a Question, fix a configuration bug, handle an Incident. The Issue closes with its resolution documented.
@@ -61,5 +61,5 @@ The Issues list never stops growing. The team triages continuously. Some Issues 
 
 1. **Capture:** An Issue enters the system. Source can be anyone: team, user, stakeholder, monitoring.
 2. **Triage:** The team understands it, labels it (Problem/Idea/Question/Incident), and decides what to do.
-3. **Resolve:** Either (a) resolved directly (answer, fix, config change), (b) promoted to a Work Item (Feature, Story, Spike), or (c) parked for later review.
+3. **Resolve:** Either (a) resolved directly (answer, fix, config change), (b) promoted to a Work Item (Feature, Story, Study), or (c) parked for later review.
 4. **Close:** The Issue is resolved, abandoned (out of scope, superseded), or parked. Closed Issues are searchable but not actionable.

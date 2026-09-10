@@ -4,7 +4,7 @@ weight: 30
 sitemap:
   priority: 0.9
 meta:
-  description: "Features, Stories, Use Cases, Spikes, Chores, Tasks, and Tests: how the team resolves Issues and delivers value."
+  description: "Features, Stories, Use Cases, Studies, Chores, Tasks, and Tests: how the team resolves Issues and delivers value."
 ---
 
 # Work Items
@@ -71,9 +71,9 @@ One Use Case maps to one [Aggregate](/ubiq/#aggregate). If the scenario crosses 
 | Story does not need full UC fidelity | Criteria + [Tasks](/ubiq/#task) + [Tests](/ubiq/#test) on the Story. No formal Use Case template. |
 
 
-## Spikes
+## Studies
 
-A Spike is a timeboxed investigation. Use it when unknowns block delivery.
+A Study is a timeboxed investigation. Use it when unknowns block delivery.
 
 | Trigger | Timebox | Output |
 |---------|---------|--------|
@@ -81,7 +81,7 @@ A Spike is a timeboxed investigation. Use it when unknowns block delivery.
 | Domain unknown | Short fixed timebox | Clarified flow or [Process/Design Event Storming](/ubiq/#process-design-event-storming) |
 | Architectural unknown | Short fixed timebox | [ADR](/ubiq/#adr-architecture-decision-record) (Architecture Decision Record) |
 
-Spikes do not produce production code. If a Spike exceeds its [timebox](/ubiq/#timebox), the team decides: rescope or run a [Go/No-Go](/ubiq/#go-no-go-gate) on the parent Feature.
+Studies do not produce production code. If a Study exceeds its [timebox](/ubiq/#timebox), the team decides: rescope or run a [Go/No-Go](/ubiq/#go-no-go-gate) on the parent Feature.
 
 
 ## Chores

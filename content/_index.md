@@ -29,7 +29,7 @@ The practices apply whether the hands are human or agentic. What changes is exec
 1. **Ship small, learn fast.** The smallest valuable unit of work, delivered independently, is better than the most perfectly planned batch.
 2. **[Feedback](/ubiq/#feedback) is the only ground truth.** [Production data](/ubiq/#production-data), [user behaviour](/ubiq/#user-behavior), and [team sentiment](/ubiq/#team-sentiment) override any plan.
 3. **[Process](/ubiq/#process) has cost.** Every [gate](/ubiq/#gate), output [review](/ubiq/#review), and meeting consumes energy. If a process element does not earn more than it costs, remove it.
-4. **[Unknowns](/ubiq/#unknowns) kill delivery.** Find them early. [Spike](/ubiq/#spike) before you commit.
+4. **[Unknowns](/ubiq/#unknowns) kill delivery.** Find them early. [Study](/ubiq/#study) before you commit.
 5. **Complexity must be contained.** Deliberate boundaries on scope, consistency, and responsibility produce systems that the team can change and maintain.
 6. **Teams make predictable errors.** Catch them with automation and peer review, not process overhead.
 7. **[Judgment over rules](/ubiq/#judgment-over-rules).** No rule applies in all contexts. The team decides when to follow, bend, or break any practice here.

@@ -42,7 +42,7 @@ An agentic team runs the same Modern XP practices with agents as executors. The 
 ### What Stays the Same
 
 - Same [values](/ubiq/#value): Communication, Simplicity, Feedback, Courage, Respect. Same [practices](/ubiq/#practice): TDD, CI, pair programming, retrospectives, [delivery cycles](/ubiq/#delivery-cycle).
-- Same [work items](/ubiq/#work-item): Features, Stories, [Use Cases](/ubiq/#use-case), Spikes, Tasks, Tests.
+- Same [work items](/ubiq/#work-item): Features, Stories, [Use Cases](/ubiq/#use-case), Studies, Tasks, Tests.
 - Same [quality gates](/ubiq/#quality-gates): unit tests, integration tests, SAST, SCA.
 
 ### What Changes

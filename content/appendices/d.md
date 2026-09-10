@@ -15,7 +15,7 @@ Production Data
   +--> Issues: user reports, Incidents, feature adoption signals
          |
          +--> Direction: Issues change Missions or Goals
-         +--> Work Items: Issues become Features, Stories, or Spikes
+         +--> Work Items: Issues become Features, Stories, or Studies
          +--> Delivery: Incidents add technical debt or process improvements
 ```
 

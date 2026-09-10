@@ -4,7 +4,7 @@ weight: 58
 sitemap:
   priority: 0.8
 meta:
-  description: "How to choose Work Items: Features, Stories, Use Cases, Spikes, Tasks, Tests, and how they connect."
+  description: "How to choose Work Items: Features, Stories, Use Cases, Studies, Tasks, Tests, and how they connect."
 ---
 
 # Work Items — In Practice
@@ -23,7 +23,7 @@ Issue
         │
         └── Roadmap (Now / Next)
               │
-              ├── Spike (unknowns → ADR / prototype / kill)
+              ├── Study (unknowns → ADR / prototype / kill)
               │
               └── Stories (independent value units)
                     │
@@ -39,7 +39,7 @@ Fidelity is a choice, not a gate. The team decides how much structure each Story
 **Default:**
 
 ```
-Issue → Feature (roadmap) → Stories → 
+Issue → Feature (roadmap) → Stories →
   ├── Partial: criteria + Tasks + Tests
   └── Full: Use Case → Tasks → Tests
 ```
@@ -47,9 +47,9 @@ Issue → Feature (roadmap) → Stories →
 **Unknowns block delivery:**
 
 ```
-Issue → Feature → Stories → Spike → ADR / prototype / kill →
-  ├── Spike confirms → proceed
-  └── Spike kills → kill Feature, close Issue
+Issue → Feature → Stories → Study → ADR / prototype / kill →
+  ├── Study confirms → proceed
+  └── Study kills → kill Feature, close Issue
 ```
 
 **Trivial work (typo, 1-line config):**
@@ -105,7 +105,7 @@ Is the work trivial (typo, 1-line config)?
 | Roadmap management | Product Owner | — | Continuous — Now/Next only |
 | Story slicing | Product Owner + Software Engineer | — | Feature needs decomposition |
 | Use Case writing | Software Engineer | QA Engineer | Story needs full spec |
-| Spike execution | Software Engineer | — | Unknown blocks commitment |
+| Study execution | Software Engineer | — | Unknown blocks commitment |
 | Task decomposition | Software Engineer | — | Story or Use Case exists |
 | Test writing (acceptance) | QA Engineer | Software Engineer | Gherkin scenarios from Use Case |
 | Prioritisation | Product Owner | Whole team | Conversation, not formula |
@@ -120,7 +120,7 @@ Is the work trivial (typo, 1-line config)?
 | **Use Case Definition** | Full structured spec per Cockburn/Jacobson | Use Case: actor, pre/post, scenarios, extensions, business rules | Not yet available |
 | **Acceptance Scenarios (Gherkin)** | Defining "done" unambiguously | Gherkin Given/When/Then scenarios | Not yet available |
 | **Task Decomposition** | Breaking work into actionable steps | Task Specifications with inputs, outputs, constraints, DoD | Not yet available |
-| **Architectural Spike** | Exploring technical unknowns | Spike Report, ADR, prototype, or kill decision | [`spike-guide`](https://github.com/jorpo-co/modern-xp-tools) |
+| **Architectural Study** | Exploring technical unknowns | Study Report, ADR, prototype, or kill decision | [`study-guide`](https://github.com/jorpo-co/modern-xp-tools) |
 | **ADR** | Capturing architectural decisions | ADR: context, options, trade-offs, decision | [`decision-records`](https://github.com/jorpo-co/modern-xp-tools) |
 
 ## Procedure Table
@@ -138,10 +138,10 @@ Is the work trivial (typo, 1-line config)?
 | **Roadmap** | Product Owner | Whole team, stakeholders | Two buckets: Now / Next |
 | **Story Card** | Story slicing | Use Case or direct build | Title, value statement, priority, parent Feature |
 | **Use Case** | Use Case Definition | Task decomposition, Tests | Structured: actor, pre/post, scenarios, extensions, business rules |
-| **Spike Report** | Spike execution | Feature go/no-go | Findings, ADR, prototype, or kill |
+| **Study Report** | Study execution | Feature go/no-go | Findings, ADR, prototype, or kill |
 | **Task Specification** | Task Decomposition | Build Phase execution | Inputs, outputs, constraints, DoD |
 | **Test** | Gherkin scenarios | Acceptance testing | ID, source, Gherkin scenario, type, preconditions, expected result |
-| **ADR** | Spike or design decision | Architecture evolution | Context, options, trade-offs, decision |
+| **ADR** | Study or design decision | Architecture evolution | Context, options, trade-offs, decision |
 
 ## Skip Conditions
 
@@ -151,7 +151,7 @@ Is the work trivial (typo, 1-line config)?
 | Roadmap | Pre-PMF; team works on one thing at a time |
 | Story slicing | Feature fits in one small Story |
 | Use Case (full structured) | Story is clear enough with criteria + Tasks + Tests (most cases) |
-| Spike | No unknowns. The team understands what to build and how. |
+| Study | No unknowns. The team understands what to build and how. |
 | Chore tracking | Chore volume is low. Informal handling is fine. |
 | ADR | Decision is routine, reversible, or has no alternatives. |
 | Task decomposition | Work is trivial. Build directly from the Story. |

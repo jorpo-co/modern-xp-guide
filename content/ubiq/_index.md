@@ -24,7 +24,7 @@ Terms defined within the Modern XP domain. Each entry links to the document wher
 
 <a id="adr-architecture-decision-record"></a>
 **ADR (Architecture Decision Record)**
-: Document that captures an architectural decision, its context, and trade-offs. Output of Spikes and domain boundary changes.
+: Document that captures an architectural decision, its context, and trade-offs. Output of Studies and domain boundary changes.
 
 <a id="agent-cost"></a>
 **Agent Cost**
@@ -526,7 +526,7 @@ Terms defined within the Modern XP domain. Each entry links to the document wher
 
 <a id="prototype"></a>
 **Prototype**
-: Possible Spike output. Working model to evaluate an approach, not production code.
+: Possible Study output. Working model to evaluate an approach, not production code.
 
 
 ## Q
@@ -637,8 +637,8 @@ Terms defined within the Modern XP domain. Each entry links to the document wher
 **Source (Test)**
 : Use Case ID and scenario name, or Story ID that a Test traces to.
 
-<a id="spike"></a>
-**Spike**
+<a id="study"></a>
+**Study**
 : Timeboxed investigation for technical, domain, or architectural unknowns. Produces decision record, prototype, or ADR. No production code.
 
 <a id="stakeholder"></a>
@@ -686,7 +686,7 @@ Terms defined within the Modern XP domain. Each entry links to the document wher
 
 <a id="timebox"></a>
 **Timebox**
-: Fixed short duration for a Spike. If exceeded, rescope or run Go/No-Go on parent Feature.
+: Fixed short duration for a Study. If exceeded, rescope or run Go/No-Go on parent Feature.
 
 <a id="toil"></a>
 **Toil**
@@ -725,7 +725,7 @@ Terms defined within the Modern XP domain. Each entry links to the document wher
 
 <a id="unknowns"></a>
 **Unknowns**
-: Kill delivery. Find them early. Spike before commit.
+: Kill delivery. Find them early. Study before commit.
 
 <a id="use-case"></a>
 **Use Case**
@@ -763,7 +763,7 @@ Terms defined within the Modern XP domain. Each entry links to the document wher
 
 <a id="work-item"></a>
 **Work Item**
-: How the team resolves Issues. Types: Feature, Story, Use Case, Spike, Chore, Task, Test.
+: How the team resolves Issues. Types: Feature, Story, Use Case, Study, Chore, Task, Test.
 
 <a id="working-software"></a>
 **Working Software**
