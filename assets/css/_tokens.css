@@ -54,6 +54,7 @@
   --epaper-space-7: calc(var(--epaper-grid) * 12);
   --epaper-space-8: calc(var(--epaper-grid) * 16);
   --epaper-space-9: calc(var(--epaper-grid) * 20);
+  --epaper-space-10: calc(var(--epaper-grid) * 24);  /* 96px */
 
   /* Typography */
   --epaper-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -70,6 +71,8 @@
   --epaper-text-2xl: calc(var(--epaper-grid) * 7);    /* 28px */
   --epaper-text-3xl: calc(var(--epaper-grid) * 8);    /* 32px */
   --epaper-text-4xl: calc(var(--epaper-grid) * 10);   /* 40px */
+  --epaper-text-5xl: calc(var(--epaper-grid) * 12);   /* 48px */
+  --epaper-text-6xl: calc(var(--epaper-grid) * 14);   /* 56px */
 
   /* Line heights — paired with text-* tokens
      line = calc(1 + (grid * N) / font-size) where N = extra grid units above text */
@@ -82,6 +85,8 @@
   --epaper-line-2xl: calc(1 + (var(--epaper-grid) * 3) / var(--epaper-text-2xl));    /* 28px + 12px = 40px → 1.429 */
   --epaper-line-3xl: calc(1 + (var(--epaper-grid) * 3) / var(--epaper-text-3xl));    /* 32px + 12px = 44px → 1.375 */
   --epaper-line-4xl: calc(1 + (var(--epaper-grid) * 4) / var(--epaper-text-4xl));    /* 40px + 16px = 56px → 1.4 */
+  --epaper-line-5xl: calc(1 + (var(--epaper-grid) * 4) / var(--epaper-text-5xl));    /* 48px + 16px = 64px → 1.333 */
+  --epaper-line-6xl: calc(1 + (var(--epaper-grid) * 4) / var(--epaper-text-6xl));    /* 56px + 16px = 72px → 1.286 */
 
   /* Generic leading tokens for body text */
   --epaper-leading-tight: var(--epaper-line-tight);

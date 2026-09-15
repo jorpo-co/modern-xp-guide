@@ -8,7 +8,11 @@ body {
   font-size: var(--epaper-text-base);
   line-height: var(--epaper-line-base);
   color: var(--epaper-fg);
-  background: var(--epaper-bg);
+  background-color: var(--epaper-bg);
+  background-image: url("/images/paper-texture.svg");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 

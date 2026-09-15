@@ -22,8 +22,6 @@ html, body {
   left: 0;
   width: calc(var(--epaper-grid) * 70);  /* 17.5rem = 280px */
   height: 100vh;
-  background: var(--epaper-bg);
-  /* border-right: var(--epaper-border-thin) solid var(--epaper-border-color); */
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -94,6 +92,42 @@ html, body {
   margin: var(--epaper-space-3) 0;
   border: none;
   border-top: var(--epaper-border-thin) solid var(--epaper-border-color);
+}
+
+
+.sidebar-nav .sidebar-section-link {
+  display: block;
+  padding: var(--epaper-space-3) 0;
+  font-size: var(--epaper-text-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--epaper-fg-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.sidebar-nav .sidebar-section-link:hover {
+  color: var(--epaper-fg);
+}
+
+
+.sidebar-nav .sidebar-group {
+  padding: var(--epaper-space-3) 0 var(--epaper-space-3) 0;
+  font-size: var(--epaper-text-sm);
+  color: var(--epaper-fg-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.sidebar-nav .sidebar-group.active {
+  font-weight: var(--epaper-weight-bold);
+}
+
+.sidebar-nav .sidebar-group a {
+  padding: 0;
+}
+
+.sidebar-nav .sidebar-group a:hover {
+  color: var(--epaper-fg-muted);
 }
 
 /* Sidebar footer */
